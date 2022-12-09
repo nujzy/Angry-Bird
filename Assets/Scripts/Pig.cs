@@ -10,7 +10,6 @@ public class Pig : MonoBehaviour
 
     //变化图片的变量
     public Sprite hurt;
-    public Sprite died;
     private SpriteRenderer sr;
 
     //外部引用的对象
@@ -39,6 +38,8 @@ public class Pig : MonoBehaviour
         else if(collision.relativeVelocity.magnitude>mins && collision.relativeVelocity.magnitude < maxs)
         {
             sr.sprite = hurt;
+            maxs = maxs / 2;
+            mins = mins / 2;
         }
     }
     private void Awake()
