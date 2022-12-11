@@ -3,6 +3,8 @@
 /Logs/
 /UserSettings/
 /Packages/
+/Temp/
+
 /.vsconfig
 *.sln
 *.csproj
