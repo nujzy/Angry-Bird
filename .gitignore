@@ -1,1 +1,7 @@
+/.vs/
 /Library/
+/Logs/
+/UserSettings/
+/.vsconfig
+*.sln
+*.csproj
