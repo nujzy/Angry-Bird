@@ -2,6 +2,7 @@
 /Library/
 /Logs/
 /UserSettings/
+/Packages/
 /.vsconfig
 *.sln
 *.csproj
