@@ -14,6 +14,7 @@ public class Birds : MonoBehaviour
 
     public GameObject boom; //添加动画，小鸟的爆炸效果
     public GameObject PP;   //用于添加贴图，小鸟的屁屁(抛物线轨迹)
+    [HideInInspector]
     public GameObject PP2;  //pp的克隆
 
     public bool active=false;      //小鸟是否是活动的
@@ -24,10 +25,20 @@ public class Birds : MonoBehaviour
     public SpringJoint2D sp;
     [HideInInspector]
     public Rigidbody2D rg;
+
+    //小鸟贴图相关变量
+    protected SpriteRenderer sr;
+    public Sprite awak;//开始时
+    public Sprite pull;//拉取时
+    public Sprite fly;//飞行时
+    public Sprite hurt;
+
     private void Awake()//游戏初始化(优先Start())
     {
         sp= GetComponent<SpringJoint2D>(); //GetComponent 返回插件类型
         rg=GetComponent<Rigidbody2D>();
+        sr = GetComponent<SpriteRenderer>();
+        sr.sprite = awak;
     }
     private void Line() //  弹弓划线
     {
@@ -40,7 +51,9 @@ public class Birds : MonoBehaviour
     }
     private void Fly()  //小鸟的飞行
     {
+        rg.freezeRotation = false;
         sp.enabled = false;
+        sr.sprite = fly;
         Next();
     }
     private void Xian()//小鸟划线的脚本
@@ -75,6 +88,7 @@ public class Birds : MonoBehaviour
         if (!Live)  //防止使用前小鸟的碰撞
         {
             Live2 = false;
+            sr.sprite = hurt;
             Invoke("Hide", 1.5F);
         }
     }
@@ -96,10 +110,16 @@ public class Birds : MonoBehaviour
             this.Live = false;
         }
     }
+
+    public virtual void Show()
+    {
+        active = false;
+    }
     private void Update()
     {
-        if (put)//鼠标按下
+        if (put && active)//鼠标按下
         {
+            sr.sprite = pull;
             transform.position=Camera.main.ScreenToWorldPoint(Input.mousePosition);//造成鸟相机一平面，相机无法照射
             transform.position += new Vector3(0,0,-Camera.main.transform.position.z);//减去z轴偏移
             //transform.position += new Vector3(0, 0, 10);//直接向前移就ok
@@ -114,6 +134,10 @@ public class Birds : MonoBehaviour
         if(!Live && Live2)  //飞出去后，触碰前
         {
             Xian();
+            if(active && Input.GetMouseButtonDown(0))
+            {
+                Show();
+            }
         }
     }
 }

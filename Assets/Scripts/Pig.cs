@@ -26,16 +26,18 @@ public class Pig : MonoBehaviour
         }
         Destroy(gameObject);
         Instantiate(boom, transform.position, Quaternion.identity);
-        GameObject dd=Instantiate(Score, transform.position+new Vector3(0,0.5f,0), Quaternion.identity);
+        GameObject dd=Instantiate(Score, transform.position, Quaternion.identity);
         Destroy(dd, 1.5f);
     }
     private void OnCollisionEnter2D(Collision2D collision)//碰撞检测 两个rg 都会反馈
     {
-        if (collision.relativeVelocity.magnitude>maxs)
+        
+        float Li = collision.relativeVelocity.magnitude;
+        if (Li>maxs)
         {
             Die();
         }
-        else if(collision.relativeVelocity.magnitude>mins && collision.relativeVelocity.magnitude < maxs)
+        else if(Li < maxs && Li>mins )
         {
             sr.sprite = hurt;
             maxs = maxs / 2;

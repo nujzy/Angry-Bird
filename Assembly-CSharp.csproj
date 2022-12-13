@@ -64,6 +64,7 @@
     <Compile Include="Assets\PocketRPG Trails\Scripts\Effects\WeaponTrail.cs" />
     <Compile Include="Assets\Scripts\Pig.cs" />
     <Compile Include="Assets\Scripts\Boom.cs" />
+    <Compile Include="Assets\Scripts\YellowBirds.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
