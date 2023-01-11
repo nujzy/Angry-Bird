@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Boom : MonoBehaviour
 {
-    public void Str()
+    public void Stre()
     {
         gameObject.SetActive(true);     //³õÊ¼»¯Îªtrue
     }

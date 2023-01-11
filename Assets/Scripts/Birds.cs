@@ -20,6 +20,7 @@ public class Birds : MonoBehaviour
     public bool active=false;      //小鸟是否是活动的
     public bool Live=true;         //判定小鸟是否一重活着(飞出去就算死了)
     private bool Live2 = true;      //判定小鸟是否二重或者(碰到东西算死了)
+    private float Stime;            //小鸟消失时间(碰到东西后时间加快
 
     [HideInInspector]   //隐藏公有变量在inspector面板里的可视化
     public SpringJoint2D sp;
@@ -79,17 +80,31 @@ public class Birds : MonoBehaviour
     }
     public void Hide() //小鸟单独的隐藏脚本
     {
-        Destroy(gameObject);
-        Instantiate(boom, transform.position, Quaternion.identity);
-        GameManage.instance.Win();
+        if (Stime !=0)
+        {   
+            Invoke("Hide", Stime);
+            Stime = 0;
+        }
+        else
+        {
+            Destroy(gameObject);
+            Instantiate(boom, transform.position, Quaternion.identity);
+            GameManage.instance.Win();
+        }
     }
     public void OnCollisionEnter2D(Collision2D collision)   //小鸟碰到东西后，开始消失判定
     {
-        if (!Live)  //防止使用前小鸟的碰撞
+        if (!Live && Live2)  //防止使用前小鸟的碰撞
         {
             Live2 = false;
             sr.sprite = hurt;
             Invoke("Hide", 1.5F);
+        }
+        else if (!Live2 && collision.relativeVelocity.magnitude>4)    //撞击后存在时间延长
+        {
+            Stime = 1.5F;
+            if (collision.relativeVelocity.magnitude>1)
+                Instantiate(boom, transform.position, Quaternion.identity);
         }
     }
     private void OnMouseDown()
