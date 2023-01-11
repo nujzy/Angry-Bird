@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -105,7 +105,196 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: THEME_05_PARALLAX_5_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 114
+        width: 79
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1dc87e2796d9314abc841fb40a65f6f
+      internalID: 1342881599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEME_05_PARALLAX_5_1
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 122
+        width: 114
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52d0c55de28fdd941977cf1cd2ee27b3
+      internalID: -1708297017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEME_05_PARALLAX_5_2
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 133
+        width: 78
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24b9144aaacedbf4baccacf1ba3e4db1
+      internalID: 1578472180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEME_05_PARALLAX_5_3
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 146
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c442c200fa8a3d24aa8359cbea80da63
+      internalID: 1648397303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEME_05_PARALLAX_5_4
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 151
+        width: 57
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69980fb9d2954604aa8717a7d499aea3
+      internalID: -756563244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEME_05_PARALLAX_5_5
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 125
+        width: 123
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5714034459a2a374ab46aa10925f6a1b
+      internalID: -112065153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEME_05_PARALLAX_5_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 67
+        width: 483
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 467f0bba07837e84bbe6bd7d45de8eeb
+      internalID: -1552351433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEME_05_PARALLAX_5_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 482
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e4921701c202974c8715800a8508f7e
+      internalID: -1386733446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: THEME_05_PARALLAX_5_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 22
+        width: 149
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 534388a9eee019346a9a5a374bc060b1
+      internalID: 1185292741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -116,7 +305,16 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      THEME_05_PARALLAX_5_0: 1342881599
+      THEME_05_PARALLAX_5_3: 1648397303
+      THEME_05_PARALLAX_5_1: -1708297017
+      THEME_05_PARALLAX_5_2: 1578472180
+      THEME_05_PARALLAX_5_7: -1386733446
+      THEME_05_PARALLAX_5_8: 1185292741
+      THEME_05_PARALLAX_5_6: -1552351433
+      THEME_05_PARALLAX_5_4: -756563244
+      THEME_05_PARALLAX_5_5: -112065153
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 

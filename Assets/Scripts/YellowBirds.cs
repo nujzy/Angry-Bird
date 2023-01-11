@@ -11,7 +11,9 @@ public class YellowBirds : Birds
         PP2 = Instantiate(PP);
         PP2.transform.localScale = new Vector3(0.8F, 0.8F, 0.8F);
         PP2.transform.position = transform.position;
-        PP2.layer = 10;
+        PPs.Add(PP2);
+        x = PP2.transform.position.x;
+        y = PP2.transform.position.y;
         sr.sprite = Sped;
         rg.velocity *= 2.15F;
     }

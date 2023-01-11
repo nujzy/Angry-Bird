@@ -7,13 +7,16 @@ public class GameManage : MonoBehaviour
     public List<Birds> bird;
     public List<Pig> pigs;
 
+    [HideInInspector]
+    public int Num; //当前的小鸟数目
     public static GameManage instance;
     private Vector3 p_org;    //初始的位置
+
     private void Awake()//指定自己,供其它类引用
     {
         instance = this;
         if (bird.Count > 0)
-            p_org = bird[0].transform.position;
+            p_org = bird[Num].transform.position;
     }
     private void Start()
     {
@@ -50,14 +53,19 @@ public class GameManage : MonoBehaviour
     }
     public void Itz()//小鸟初始化
     {   
-        for(int i=0; i<bird.Count; i++)
+        for(int i=Num; i<bird.Count; i++)
         {
-            if(i == 0)
+            if(i == Num)
             {
+                bird[i].rg.constraints = RigidbodyConstraints2D.FreezeAll;
                 bird[i].active = true;
-                bird[i].transform.position = p_org;
                 bird[i].enabled = true;
                 bird[i].sp.enabled = true;
+                bird[i].transform.position = p_org;
+                if (Num >= 2)
+                {
+                    bird[i - 2].Dst();
+                }
             }
             else
             {
@@ -65,5 +73,6 @@ public class GameManage : MonoBehaviour
                 bird[i].sp.enabled = false;
             }
         }
+        Num ++;
     }
 }

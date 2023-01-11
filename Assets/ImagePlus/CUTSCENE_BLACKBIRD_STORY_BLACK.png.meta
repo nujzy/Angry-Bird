@@ -1,0 +1,1159 @@
+fileFormatVersion: 2
+guid: 700f6de3ef2424841b04936eeba20d34
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CUTSCENE_BLACKBIRD_STORY_BLACK_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1417
+        width: 1593
+        height: 584
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 612ad1875ac0cc14e920c52866e3934c
+      internalID: -948071669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CUTSCENE_BLACKBIRD_STORY_BLACK_1
+      rect:
+        serializedVersion: 2
+        x: 1598
+        y: 1558
+        width: 200
+        height: 441
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 115b05a003206824a94d56a981048f2c
+      internalID: 1916642799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CUTSCENE_BLACKBIRD_STORY_BLACK_2
+      rect:
+        serializedVersion: 2
+        x: 1801
+        y: 1927
+        width: 28
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d23e20101b77b3241a0a3ad1f79adea5
+      internalID: -1189229926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CUTSCENE_BLACKBIRD_STORY_BLACK_3
+      rect:
+        serializedVersion: 2
+        x: 1832
+        y: 1954
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 430018e41c9b9d24e9019a7ff0d496dc
+      internalID: 1987576764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CUTSCENE_BLACKBIRD_STORY_BLACK_4
+      rect:
+        serializedVersion: 2
+        x: 1847
+        y: 1963
+        width: 26
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b1f607ebca540b48ab6dc5a50b1846d
+      internalID: 1213019035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CUTSCENE_BLACKBIRD_STORY_BLACK_5
+      rect:
+        serializedVersion: 2
+        x: 1801
+        y: 1914
+        width: 51
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6f874696456ecf4ca73ea7b97cdca91
+      internalID: 390012058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CUTSCENE_BLACKBIRD_STORY_BLACK_6
+      rect:
+        serializedVersion: 2
+        x: 1598
+        y: 1510
+        width: 12
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d899c13479bb8a34186f9169efd5ff96
+      internalID: 1845166341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CUTSCENE_BLACKBIRD_STORY_BLACK_7
+      rect:
+        serializedVersion: 2
+        x: 1602
+        y: 1429
+        width: 199
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9cbf11d282b6f6459a7f73c8c079460
+      internalID: 1682120559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CUTSCENE_BLACKBIRD_STORY_BLACK_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 994
+        width: 840
+        height: 422
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efd371e3b2a2ccc499bfde29c3a5f301
+      internalID: 732703116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CUTSCENE_BLACKBIRD_STORY_BLACK_9
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 1060
+        width: 1027
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 283ef86080534934386ffb7da5484482
+      internalID: -594944497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CUTSCENE_BLACKBIRD_STORY_BLACK_10
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 588
+        width: 185
+        height: 405
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ff30084cda70794a809fd6e0357d220
+      internalID: 1044316939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CUTSCENE_BLACKBIRD_STORY_BLACK_11
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 617
+        width: 324
+        height: 376
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90df285a188bb2c47971bf2685d41533
+      internalID: 2013168911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CUTSCENE_BLACKBIRD_STORY_BLACK_12
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 640
+        width: 227
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2fe4725961612743a8b5a627f59ea59
+      internalID: -431764802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CUTSCENE_BLACKBIRD_STORY_BLACK_13
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 875
+        width: 78
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a495c25f286c50049b2b5d6755a76dd6
+      internalID: -2064984464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CUTSCENE_BLACKBIRD_STORY_BLACK_14
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 740
+        width: 667
+        height: 317
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b03ad578ff035ba41bb40501d499d3eb
+      internalID: 1050921536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CUTSCENE_BLACKBIRD_STORY_BLACK_15
+      rect:
+        serializedVersion: 2
+        x: 1517
+        y: 851
+        width: 256
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c01f71ff7705c21488a815202d24c2cf
+      internalID: 62690793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CUTSCENE_BLACKBIRD_STORY_BLACK_16
+      rect:
+        serializedVersion: 2
+        x: 1509
+        y: 749
+        width: 298
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a87c5792092371f4bb8f46594c1969ee
+      internalID: 298635481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CUTSCENE_BLACKBIRD_STORY_BLACK_17
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 619
+        width: 82
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37ab7bf93b201d64a8cc91f93145ebe8
+      internalID: -140967531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CUTSCENE_BLACKBIRD_STORY_BLACK_18
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 542
+        width: 373
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 645e6f768b74901469f263dce87f8572
+      internalID: 355682182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CUTSCENE_BLACKBIRD_STORY_BLACK_19
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 555
+        width: 503
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8727be283effa6409747fb22d47c882
+      internalID: -1918159044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CUTSCENE_BLACKBIRD_STORY_BLACK_20
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 347
+        width: 180
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 877cf3ac82cf7f1498e5fe8420196520
+      internalID: -841507289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CUTSCENE_BLACKBIRD_STORY_BLACK_21
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 286
+        width: 264
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fc4cdf6a61041f4d880f5f6e5f95295
+      internalID: -748007603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CUTSCENE_BLACKBIRD_STORY_BLACK_22
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 341
+        width: 271
+        height: 273
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fe243b763316d74887edef5ad95e604
+      internalID: -1450847776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CUTSCENE_BLACKBIRD_STORY_BLACK_23
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 524
+        width: 91
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1836d44dd8e2fd043ae7eb0d969516c1
+      internalID: -483277266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CUTSCENE_BLACKBIRD_STORY_BLACK_24
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 386
+        width: 230
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 762e8803e56426a4c9f0acfd8c633b71
+      internalID: -983548719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CUTSCENE_BLACKBIRD_STORY_BLACK_26
+      rect:
+        serializedVersion: 2
+        x: 1217
+        y: 439
+        width: 376
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83312f150f35abc488cfd9f8ed970351
+      internalID: -2063243426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CUTSCENE_BLACKBIRD_STORY_BLACK_27
+      rect:
+        serializedVersion: 2
+        x: 1596
+        y: 485
+        width: 211
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 484f96f17558e3f4b991622ae532c325
+      internalID: -2020115790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CUTSCENE_BLACKBIRD_STORY_BLACK_28
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 451
+        width: 95
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7796857d2785b214491ab4b6f8e53fba
+      internalID: 873628402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CUTSCENE_BLACKBIRD_STORY_BLACK_29
+      rect:
+        serializedVersion: 2
+        x: 1076
+        y: 411
+        width: 133
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 377aacc013108be499cb8ae77fdc2950
+      internalID: -179108804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CUTSCENE_BLACKBIRD_STORY_BLACK_36
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 400
+        width: 102
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d9344868c0d3c449a218a42fb5607dd
+      internalID: 289394303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CUTSCENE_BLACKBIRD_STORY_BLACK_38
+      rect:
+        serializedVersion: 2
+        x: 1187
+        y: 332
+        width: 553
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 274da1e68f2dd90408eda6f5a50038a3
+      internalID: -914444072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CUTSCENE_BLACKBIRD_STORY_BLACK_39
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 107
+        width: 178
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef17b059b57e66749a2af6a2945a04cb
+      internalID: 1343481273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CUTSCENE_BLACKBIRD_STORY_BLACK_40
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 2
+        width: 341
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2250ea4113bafab4a81804f6d772d85d
+      internalID: -1306897220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CUTSCENE_BLACKBIRD_STORY_BLACK_41
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 224
+        width: 215
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86333dbb68fcc1746bf176710752838c
+      internalID: -1770037328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CUTSCENE_BLACKBIRD_STORY_BLACK_42
+      rect:
+        serializedVersion: 2
+        x: 1057
+        y: 315
+        width: 137
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dc574a3338e89c4e81deb67e6adb4bd
+      internalID: -1534518737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CUTSCENE_BLACKBIRD_STORY_BLACK_45
+      rect:
+        serializedVersion: 2
+        x: 1059
+        y: 276
+        width: 155
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce677ef7cbf14a5489d5ca53b135b9a5
+      internalID: 131855331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CUTSCENE_BLACKBIRD_STORY_BLACK_49
+      rect:
+        serializedVersion: 2
+        x: 1220
+        y: 171
+        width: 285
+        height: 152
+      alignment: 9
+      pivot: {x: 0.51649964, y: 0.4869966}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 187819ade8298914ca2e03c543505f03
+      internalID: -2022998853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CUTSCENE_BLACKBIRD_STORY_BLACK_50
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 122
+        width: 221
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d46543d160c07ac45b2c7e55ee70b0de
+      internalID: 290633840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CUTSCENE_BLACKBIRD_STORY_BLACK_51
+      rect:
+        serializedVersion: 2
+        x: 1059
+        y: 243
+        width: 134
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fb17289c9735b44faa3b9af439bd2e2
+      internalID: 32927083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CUTSCENE_BLACKBIRD_STORY_BLACK_56
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 108
+        width: 310
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeb7745fc582e2947bd25139f21b3e60
+      internalID: -56975010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CUTSCENE_BLACKBIRD_STORY_BLACK_63
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 2
+        width: 216
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83b9f5e89b5feab41bed5b8cb4e5affb
+      internalID: 300475239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CUTSCENE_BLACKBIRD_STORY_BLACK_64
+      rect:
+        serializedVersion: 2
+        x: 1219
+        y: 115
+        width: 211
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be45981949a9b7e4aa5c3b3945223239
+      internalID: 143246149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CUTSCENE_BLACKBIRD_STORY_BLACK_65
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 7
+        width: 105
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0c502db1516f0f4897abcd6a332571d
+      internalID: -514611782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CUTSCENE_BLACKBIRD_STORY_BLACK_66
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 20
+        width: 132
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82c615f32a6b6094e803f4800bc175e9
+      internalID: -1379326068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CUTSCENE_BLACKBIRD_STORY_BLACK_67
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 21
+        width: 208
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3e3db25a9fc2ea4ea80b0b745ba11b3
+      internalID: -1288056425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CUTSCENE_BLACKBIRD_STORY_BLACK_68
+      rect:
+        serializedVersion: 2
+        x: 1049
+        y: 37
+        width: 155
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 544caa595b715d646abb59e8cc67ae2a
+      internalID: 1252428630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      CUTSCENE_BLACKBIRD_STORY_BLACK_0: -948071669
+      CUTSCENE_BLACKBIRD_STORY_BLACK_67: -1288056425
+      CUTSCENE_BLACKBIRD_STORY_BLACK_66: -1379326068
+      CUTSCENE_BLACKBIRD_STORY_BLACK_16: 298635481
+      CUTSCENE_BLACKBIRD_STORY_BLACK_21: -748007603
+      CUTSCENE_BLACKBIRD_STORY_BLACK_24: -983548719
+      CUTSCENE_BLACKBIRD_STORY_BLACK_18: 355682182
+      CUTSCENE_BLACKBIRD_STORY_BLACK_23: -483277266
+      CUTSCENE_BLACKBIRD_STORY_BLACK_6: 1845166341
+      CUTSCENE_BLACKBIRD_STORY_BLACK_30: -246890293
+      CUTSCENE_BLACKBIRD_STORY_BLACK_2: -1189229926
+      CUTSCENE_BLACKBIRD_STORY_BLACK_26: -2063243426
+      CUTSCENE_BLACKBIRD_STORY_BLACK_39: 1343481273
+      CUTSCENE_BLACKBIRD_STORY_BLACK_48: 8543892
+      CUTSCENE_BLACKBIRD_STORY_BLACK_56: -56975010
+      CUTSCENE_BLACKBIRD_STORY_BLACK_57: 1104813820
+      CUTSCENE_BLACKBIRD_STORY_BLACK_29: -179108804
+      CUTSCENE_BLACKBIRD_STORY_BLACK_68: 1252428630
+      CUTSCENE_BLACKBIRD_STORY_BLACK_3: 1987576764
+      CUTSCENE_BLACKBIRD_STORY_BLACK_40: -1306897220
+      CUTSCENE_BLACKBIRD_STORY_BLACK_11: 2013168911
+      CUTSCENE_BLACKBIRD_STORY_BLACK_32: 143028515
+      CUTSCENE_BLACKBIRD_STORY_BLACK_12: -431764802
+      CUTSCENE_BLACKBIRD_STORY_BLACK_55: -416799849
+      CUTSCENE_BLACKBIRD_STORY_BLACK_43: 12821620
+      CUTSCENE_BLACKBIRD_STORY_BLACK_20: -841507289
+      CUTSCENE_BLACKBIRD_STORY_BLACK_14: 1050921536
+      CUTSCENE_BLACKBIRD_STORY_BLACK_37: -615708359
+      CUTSCENE_BLACKBIRD_STORY_BLACK_35: 1355677962
+      CUTSCENE_BLACKBIRD_STORY_BLACK_27: -2020115790
+      CUTSCENE_BLACKBIRD_STORY_BLACK_19: -1918159044
+      CUTSCENE_BLACKBIRD_STORY_BLACK_47: -1070385621
+      CUTSCENE_BLACKBIRD_STORY_BLACK_17: -140967531
+      CUTSCENE_BLACKBIRD_STORY_BLACK_50: 290633840
+      CUTSCENE_BLACKBIRD_STORY_BLACK_49: -2022998853
+      CUTSCENE_BLACKBIRD_STORY_BLACK_58: -681887035
+      CUTSCENE_BLACKBIRD_STORY_BLACK_65: -514611782
+      CUTSCENE_BLACKBIRD_STORY_BLACK_61: 371612303
+      CUTSCENE_BLACKBIRD_STORY_BLACK_4: 1213019035
+      CUTSCENE_BLACKBIRD_STORY_BLACK_59: 1284765219
+      CUTSCENE_BLACKBIRD_STORY_BLACK_5: 390012058
+      CUTSCENE_BLACKBIRD_STORY_BLACK_42: -1534518737
+      CUTSCENE_BLACKBIRD_STORY_BLACK_51: 32927083
+      CUTSCENE_BLACKBIRD_STORY_BLACK_36: 289394303
+      CUTSCENE_BLACKBIRD_STORY_BLACK_45: 131855331
+      CUTSCENE_BLACKBIRD_STORY_BLACK_25: 587815244
+      CUTSCENE_BLACKBIRD_STORY_BLACK_33: 1262041193
+      CUTSCENE_BLACKBIRD_STORY_BLACK_8: 732703116
+      CUTSCENE_BLACKBIRD_STORY_BLACK_10: 1044316939
+      CUTSCENE_BLACKBIRD_STORY_BLACK_9: -594944497
+      CUTSCENE_BLACKBIRD_STORY_BLACK_1: 1916642799
+      CUTSCENE_BLACKBIRD_STORY_BLACK_13: -2064984464
+      CUTSCENE_BLACKBIRD_STORY_BLACK_38: -914444072
+      CUTSCENE_BLACKBIRD_STORY_BLACK_34: -890057201
+      CUTSCENE_BLACKBIRD_STORY_BLACK_28: 873628402
+      CUTSCENE_BLACKBIRD_STORY_BLACK_53: -1716988615
+      CUTSCENE_BLACKBIRD_STORY_BLACK_7: 1682120559
+      CUTSCENE_BLACKBIRD_STORY_BLACK_54: 170754822
+      CUTSCENE_BLACKBIRD_STORY_BLACK_46: -43015369
+      CUTSCENE_BLACKBIRD_STORY_BLACK_41: -1770037328
+      CUTSCENE_BLACKBIRD_STORY_BLACK_63: 300475239
+      CUTSCENE_BLACKBIRD_STORY_BLACK_15: 62690793
+      CUTSCENE_BLACKBIRD_STORY_BLACK_52: -223587584
+      CUTSCENE_BLACKBIRD_STORY_BLACK_44: -1862580844
+      CUTSCENE_BLACKBIRD_STORY_BLACK_60: 591633514
+      CUTSCENE_BLACKBIRD_STORY_BLACK_31: 1935787601
+      CUTSCENE_BLACKBIRD_STORY_BLACK_62: 1762673543
+      CUTSCENE_BLACKBIRD_STORY_BLACK_64: 143246149
+      CUTSCENE_BLACKBIRD_STORY_BLACK_22: -1450847776
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
