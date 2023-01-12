@@ -90,6 +90,15 @@ public class Birds : MonoBehaviour
         }
             
     }
+    protected void ShowPP()
+    {
+        PP2 = Instantiate(PP);
+        PP2.transform.localScale = new Vector3(0.8F, 0.8F, 0.8F);
+        PP2.transform.position = transform.position;
+        PPs.Add(PP2);
+        x = PP2.transform.position.x;
+        y = PP2.transform.position.y;
+    }
     public void Dst()   //Æ¨Æ¨µÄÉ¾³ý½Å±¾
     {
         for(int i = 0; i < PPs.Count;i++)

@@ -3,7 +3,21 @@ guid: d83dd36bda26d7842ace227311ee05f8
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - position_r: {instanceID: 0}
+  - position_l: {instanceID: 0}
+  - po_r: {instanceID: 0}
+  - po_l: {instanceID: 0}
+  - Pad: {fileID: 2094624164665299022, guid: 0e0175802d0cfec4288694a20025636a, type: 3}
+  - boom: {fileID: 5174335192159222314, guid: 5d6cc5c134a51184db04d143cbef5627, type: 3}
+  - PP: {fileID: 6205346999462627497, guid: 5a4e97f2989d0f9408a2faf65beeacc1, type: 3}
+  - PP2: {instanceID: 0}
+  - sp: {instanceID: 0}
+  - rg: {instanceID: 0}
+  - awak: {instanceID: 0}
+  - pull: {instanceID: 0}
+  - fly: {instanceID: 0}
+  - hurt: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
