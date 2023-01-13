@@ -5,6 +5,7 @@ public class Birds : MonoBehaviour
 {
     public float maxdis = 3;
     private bool put = false;
+    public int Mynum;
 
     public Transform position_r;
     public Transform position_l;
@@ -25,7 +26,7 @@ public class Birds : MonoBehaviour
     public bool active = false;      //小鸟是否是活动的
     public bool Live = true;         //判定小鸟是否一重活着(飞出去就算死了)
     private bool Live2 = true;      //判定小鸟是否二重或者(碰到东西算死了)
-    private float Stime;            //小鸟消失时间(碰到东西后时间加快
+    private float Stime;            //小鸟消失时间(碰到东西后时间重置
 
     [HideInInspector]   //隐藏公有变量在inspector面板里的可视化
     public SpringJoint2D sp;
@@ -34,10 +35,17 @@ public class Birds : MonoBehaviour
 
     //小鸟贴图相关变量
     protected SpriteRenderer sr;
-    public Sprite awak;//开始时
-    public Sprite pull;//拉取时
-    public Sprite fly;//飞行时
-    public Sprite hurt;
+    public Sprite awak; //开始时
+    public Sprite pull; //拉取时
+    public Sprite fly;  //飞行时
+    public Sprite hurt; //受伤时
+    public Sprite link; //眨眼动画
+    public Sprite open; //张嘴动画
+
+    //用于跳跃动画的相关变量
+    private Vector3 from;
+    private Vector3 to;
+    private float Anime_time;
 
     private void Awake()//游戏初始化(优先Start())
     {
@@ -46,6 +54,52 @@ public class Birds : MonoBehaviour
         rg = GetComponent<Rigidbody2D>();   
         sr = GetComponent<SpriteRenderer>();
         sr.sprite = awak;       
+    }
+    public void Change()
+    {
+        if(Live)
+            sr.sprite = awak;
+        Invoke("Anime_Change",Random.Range(5,40)/10);
+    }
+    private void Anime_Change()
+    {
+        if(Mynum>=GameManage.instance.Num-1 && Live)
+        {
+            Invoke("Change",0.25F);
+            if(Random.Range(0,2) == 0)
+            {
+                sr.sprite = open;
+            }
+            else
+            {
+                sr.sprite = link;
+            }
+        }
+    }
+    public void Jump()
+    {
+        from = transform.position;
+        to = transform.position+new Vector3(0,1,0);
+        Invoke("Anime_Jump", Random.Range(2, 5));
+        print(1);
+    }
+    private void Anime_Jump()
+    {
+        if(Mynum >= GameManage.instance.Num && Live)
+        {
+            if(Anime_time<0.5F)
+            {
+                Invoke("Anime_Jump_1", 0.02F);
+            }
+            print(2);
+            Invoke("Jump", 0F);
+        }
+    }
+    private void Anime_Jump_1()
+    {
+        Anime_time += 0.02F;
+        transform.position = Vector3.Lerp(from, to, Anime_time);
+        Invoke("Anime_Jump", 0.02F);
     }
     private void Line(GameObject obj) //  弹弓划线
     {
@@ -61,8 +115,6 @@ public class Birds : MonoBehaviour
         po_r.SetPosition(1, Pad.transform.position);
         po_l.SetPosition(0, position_l.position);
         po_l.SetPosition(1, Pad.transform.position);
-
-
     }
     private void Fly()  //小鸟的飞行
     {
@@ -81,7 +133,7 @@ public class Birds : MonoBehaviour
         {
             PP2 = Instantiate(PP) as GameObject;
             PP2.transform.position = transform.position;
-            float v3 = (size % 3 + 2F) / 10 ;
+            float v3 = (size % 3 + 2.45F) / 10 ;
             size ++;
             PP2.transform.localScale = new Vector3(v3, v3, v3);
             x = PP2.transform.position.x;

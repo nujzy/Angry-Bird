@@ -21,6 +21,12 @@ public class GameManage : MonoBehaviour
     private void Start()
     {
         Itz();
+        for(int i = 0; i < bird.Count; i++)
+        {
+            bird[i].Mynum = i;
+            bird[i].Change();
+            //bird[i].Jump();
+        }
     }
     public void Nextbird()  //视频里使用Nextbird方法并不符合游戏逻辑，故拆解成public的Itz和Win 
     {

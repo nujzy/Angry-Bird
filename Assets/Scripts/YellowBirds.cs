@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class YellowBirds : Birds
 {
-    public Sprite Sped;
+    public Sprite Speed;
     public override void Show()
     {
         base.Show();
         ShowPP();
-        sr.sprite = Sped;
+        sr.sprite = Speed;
         rg.velocity *= 2.15F;
     }
 }
