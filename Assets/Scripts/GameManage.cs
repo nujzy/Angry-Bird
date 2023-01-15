@@ -10,7 +10,7 @@ public class GameManage : MonoBehaviour
     [HideInInspector]
     public int Num; //当前的小鸟数目
     public static GameManage instance;
-    private Vector3 p_org;    //初始的位置
+    public Vector3 p_org;    //初始的位置
 
     private void Awake()//指定自己,供其它类引用
     {
@@ -25,26 +25,8 @@ public class GameManage : MonoBehaviour
         {
             bird[i].Mynum = i;
             bird[i].Change();
-            //bird[i].Jump();
+            bird[i].Jump();
         }
-    }
-    public void Nextbird()  //视频里使用Nextbird方法并不符合游戏逻辑，故拆解成public的Itz和Win 
-    {
-       /* if (pigs.Count>0)
-        {
-            if(bird.Count>0)//继续
-            {
-                Itz();
-            }
-            else//失败
-            {
-
-            }
-        }
-        else
-        {
-
-        }*/
     }
     public void Win()   //只响应胜利和失败
     {

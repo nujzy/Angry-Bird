@@ -4,11 +4,5 @@ using UnityEngine;
 
 public class RedBirds : Birds
 {
-    
 
-    void Start()
-    {
-
-    }
-    
 }

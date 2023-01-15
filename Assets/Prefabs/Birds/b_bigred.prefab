@@ -100,7 +100,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 5.8
   m_LinearDrag: 0
   m_AngularDrag: 3.3
   m_GravityScale: 1
@@ -177,3 +177,12 @@ MonoBehaviour:
   hurt: {fileID: 1675509857, guid: 83fcd8f88b783414b82a8f648265aa56, type: 3}
   link: {fileID: 2051789338, guid: 83fcd8f88b783414b82a8f648265aa56, type: 3}
   open: {fileID: -2101899616, guid: 83fcd8f88b783414b82a8f648265aa56, type: 3}
+  coll:
+  - {fileID: 8300000, guid: f781955d532266d4f8806e099d386534, type: 3}
+  - {fileID: 8300000, guid: 99fd7967262960241914cd2703479792, type: 3}
+  - {fileID: 8300000, guid: 3170fcdd55cc0ec418795ab9cf3cd4b9, type: 3}
+  - {fileID: 8300000, guid: 4f66260ec305ad64ca1dcd89b36ff9dd, type: 3}
+  yell:
+  - {fileID: 8300000, guid: f3dc11d25b92cc449a45674951a477c2, type: 3}
+  selects: {fileID: 8300000, guid: 8258249efe47fff4cb4cade65c57b051, type: 3}
+  fly_Audio: {fileID: 8300000, guid: 5ca420d546580144aa50bcce2d0a18b1, type: 3}

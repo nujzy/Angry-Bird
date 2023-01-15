@@ -18,20 +18,26 @@ public class Birds : MonoBehaviour
     public GameObject PP;   //用于添加贴图，小鸟的屁屁(抛物线轨迹)
     [HideInInspector]
     public GameObject PP2;  //pp的克隆
-    protected float x;    //x的坐标
+    protected float x;      //x的坐标
     protected float y;
     private float size;
-    protected List<GameObject> PPs;   //用于存储，统一删除PP2
+    protected List<GameObject> PPs;  //用于存储，统一删除PP2
 
     public bool active = false;      //小鸟是否是活动的
     public bool Live = true;         //判定小鸟是否一重活着(飞出去就算死了)
-    private bool Live2 = true;      //判定小鸟是否二重或者(碰到东西算死了)
-    private float Stime;            //小鸟消失时间(碰到东西后时间重置
+    private bool Live2 = true;       //判定小鸟是否二重或者(碰到东西算死了)
+    private float Stime;             //小鸟消失时间(碰到东西后时间重置
 
-    [HideInInspector]   //隐藏公有变量在inspector面板里的可视化
+    [HideInInspector]
     public SpringJoint2D sp;
     [HideInInspector]
     public Rigidbody2D rg;
+
+    //动画相关变量
+    private Animator An;
+    private float Anime_Speed=0;
+    private float Anime_Time=0;
+    private AnimatorStateInfo state;
 
     //小鸟贴图相关变量
     protected SpriteRenderer sr;
@@ -42,30 +48,35 @@ public class Birds : MonoBehaviour
     public Sprite link; //眨眼动画
     public Sprite open; //张嘴动画
 
-    //用于跳跃动画的相关变量
-    private Vector3 from;
-    private Vector3 to;
-    private float Anime_time;
-
-    private void Awake()//游戏初始化(优先Start())
+    //声音相关变量
+    public List<AudioClip> coll;
+    public List<AudioClip> yell;
+    public AudioClip selects;
+    public AudioClip fly_Audio;
+    private void Awake()
     {
         PPs = new List<GameObject> ();
-        sp = GetComponent<SpringJoint2D>(); //GetComponent 返回插件类型
+        sp = GetComponent<SpringJoint2D>();
         rg = GetComponent<Rigidbody2D>();   
         sr = GetComponent<SpriteRenderer>();
-        sr.sprite = awak;       
+        An = GetComponent<Animator>();
+        state = An.GetCurrentAnimatorStateInfo(0);
+        An.SetFloat("Scale", Anime_Speed);
+        An.SetFloat("Ti",Anime_Time);
+        sr.sprite = awak;
+        
     }
     public void Change()
     {
         if(Live)
             sr.sprite = awak;
-        Invoke("Anime_Change",Random.Range(5,40)/10);
+        float a = Random.Range(0.5F, 4);
+        Invoke("Anime_Change",a);
     }
     private void Anime_Change()
     {
         if(Mynum>=GameManage.instance.Num-1 && Live)
         {
-            Invoke("Change",0.25F);
             if(Random.Range(0,2) == 0)
             {
                 sr.sprite = open;
@@ -74,32 +85,43 @@ public class Birds : MonoBehaviour
             {
                 sr.sprite = link;
             }
+            Invoke("Change", 0.2F);
         }
     }
     public void Jump()
     {
-        from = transform.position;
-        to = transform.position+new Vector3(0,1,0);
-        Invoke("Anime_Jump", Random.Range(2, 5));
-        print(1);
+        Anime_Time = 0;
+        Anime_Speed = 0;
+        float a = Random.Range(1.5F, 4F);
+       
+        if (rg.mass<2)
+            Invoke("Anime_Jump", a);
     }
     private void Anime_Jump()
     {
         if(Mynum >= GameManage.instance.Num && Live)
         {
-            if(Anime_time<0.5F)
+            if (Random.Range(0, 2) == 0)
             {
-                Invoke("Anime_Jump_1", 0.02F);
+                rg.velocity = new Vector2(rg.velocity.x, rg.velocity.y + 2.5F);
             }
-            print(2);
-            Invoke("Jump", 0F);
+            else
+            {
+                rg.velocity = new Vector2(rg.velocity.x, rg.velocity.y + 3.75F);
+                int a = Random.Range(-1, 2);    //-1,0,1
+                
+            }
+            Invoke("Jump", 1);
         }
     }
-    private void Anime_Jump_1()
+    protected void AudioPlay(AudioClip clip)
     {
-        Anime_time += 0.02F;
-        transform.position = Vector3.Lerp(from, to, Anime_time);
-        Invoke("Anime_Jump", 0.02F);
+        AudioSource.PlayClipAtPoint(clip,new Vector3 (0,0,0));
+    }
+    protected void AudioPlay(List<AudioClip> clips)
+    {
+        int a = Random.Range(0, clips.Count);
+        AudioSource.PlayClipAtPoint(clips[a], new Vector3 (0,0,0));
     }
     private void Line(GameObject obj) //  弹弓划线
     {
@@ -120,6 +142,7 @@ public class Birds : MonoBehaviour
     {
         if(Live)
         {
+            AudioPlay(fly_Audio);
             Next();
             Live = false;
         }
@@ -158,7 +181,6 @@ public class Birds : MonoBehaviour
             Destroy(PPs[i]);
         }
     }
-
     private void Itzs()
     {
         GameManage.instance.Itz();
@@ -193,46 +215,67 @@ public class Birds : MonoBehaviour
         {
             Stime = 2.5F;
             if (collision.relativeVelocity.magnitude > 6)
+            {
                 Instantiate(boom, transform.position, Quaternion.identity);
+                AudioPlay(coll);
+            }
         }
     }
     private void OnMouseDown()
     {
         put = true;
-        rg.isKinematic = true;
+        if (active)
+        {
+            AudioPlay(selects);
+            rg.isKinematic = true;
+        }
     }
     private void OnMouseUp()
     {
         put = false;
         rg.isKinematic = false;
+        rg.angularVelocity = 0;
+        if (Mynum >= GameManage.instance.Num && rg.velocity.y == 0)
+        {
+            rg.velocity = new Vector2(rg.velocity.x, rg.velocity.y + 3 / rg.mass);
+            AudioPlay(selects);
+        }
+        rg.MoveRotation(rg.rotation+30);
         //划线禁用
         po_l.enabled = false;
         po_r.enabled = false;
         if (active)
         {
-            Invoke("Fly", 0.1F);
-            Pad.transform.position = new Vector3(-5.39F, -0.51F, 0);
-            Line(Pad);
-            rg.constraints = ~RigidbodyConstraints2D.FreezePosition;
+            if (Vector3.Distance(transform.position, position_r.position) > 0.3)
+            {
+                Invoke("Fly", 0.1F);
+                Pad.transform.position = new Vector3(-5.39F, -0.51F, 0);
+                Line(Pad);
+                rg.constraints = ~RigidbodyConstraints2D.FreezePosition;
+            }
+            else
+            {
+                transform.position = GameManage.instance.p_org;
+                Line(gameObject);
+            }
         }
     }
-
     public virtual void Show()
     {
         active = false;
+        AudioPlay(yell);
     }
     private void Update()
     {
         if (put && active && Live)//鼠标按下
         {
             sr.sprite = pull;
-            transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition);//造成鸟相机一平面，相机无法照射
-            transform.position += new Vector3(0, 0, -Camera.main.transform.position.z);//减去z轴偏移
-            //transform.position += new Vector3(0, 0, 10);//直接向前移就ok
+            transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition);   //鸟相机一平面，相机无法照射
+            transform.position += new Vector3(0, 0, -Camera.main.transform.position.z); //减去z轴偏移
             if (Vector3.Distance(transform.position, position_r.position) > maxdis)
             {
-                Vector3 pos = (transform.position - position_r.position).normalized;//获得向量方向(单位化)
-                pos *= maxdis;                                                      //确定向量长度
+                Vector3 pos = (transform.position - position_r.position).normalized;    //获得向量方向(单位化)
+                pos *= maxdis;                                                          //确定向量长度
                 transform.position = pos + position_r.position;
             }
         }

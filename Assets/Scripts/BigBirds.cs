@@ -6,7 +6,7 @@ public class BigBirds : Birds
 {
     private void Start()
     {
-        rg.mass = 5.65F;
+        rg.mass = 5.8F;
         print(0);
     }
 }

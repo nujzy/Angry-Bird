@@ -998,6 +998,17 @@ MonoBehaviour:
   hurt: {fileID: 598026866, guid: 83fcd8f88b783414b82a8f648265aa56, type: 3}
   link: {fileID: -1996528685, guid: 83fcd8f88b783414b82a8f648265aa56, type: 3}
   open: {fileID: 1959187280, guid: 83fcd8f88b783414b82a8f648265aa56, type: 3}
+  coll:
+  - {fileID: 8300000, guid: f6c80d133bd0776418467d7a26425a6a, type: 3}
+  - {fileID: 8300000, guid: 06afb2463ff010d4abd5159d52e5e8c7, type: 3}
+  - {fileID: 8300000, guid: 2923ab1f86f7148498ea40cc7f057b06, type: 3}
+  - {fileID: 8300000, guid: d08bd741d768ab14ab57b61b9e1771d3, type: 3}
+  yell:
+  - {fileID: 8300000, guid: 52e02f696fe4d6b4d8d0f31ba960a615, type: 3}
+  - {fileID: 8300000, guid: fc16ed48403739d48af74d5d3be357fc, type: 3}
+  - {fileID: 8300000, guid: b4e3136b3878b1e4a96e2e38f42a1e02, type: 3}
+  selects: {fileID: 8300000, guid: c1094b2ace6faed41924809267746831, type: 3}
+  fly_Audio: {fileID: 8300000, guid: 11c261ddcfd40bc4e87e77722a25b47a, type: 3}
 --- !u!58 &347611018
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1706,6 +1717,17 @@ MonoBehaviour:
   hurt: {fileID: 598026866, guid: 83fcd8f88b783414b82a8f648265aa56, type: 3}
   link: {fileID: -1996528685, guid: 83fcd8f88b783414b82a8f648265aa56, type: 3}
   open: {fileID: 1959187280, guid: 83fcd8f88b783414b82a8f648265aa56, type: 3}
+  coll:
+  - {fileID: 8300000, guid: f6c80d133bd0776418467d7a26425a6a, type: 3}
+  - {fileID: 8300000, guid: 06afb2463ff010d4abd5159d52e5e8c7, type: 3}
+  - {fileID: 8300000, guid: 2923ab1f86f7148498ea40cc7f057b06, type: 3}
+  - {fileID: 8300000, guid: d08bd741d768ab14ab57b61b9e1771d3, type: 3}
+  yell:
+  - {fileID: 8300000, guid: 52e02f696fe4d6b4d8d0f31ba960a615, type: 3}
+  - {fileID: 8300000, guid: fc16ed48403739d48af74d5d3be357fc, type: 3}
+  - {fileID: 8300000, guid: b4e3136b3878b1e4a96e2e38f42a1e02, type: 3}
+  selects: {fileID: 8300000, guid: c1094b2ace6faed41924809267746831, type: 3}
+  fly_Audio: {fileID: 8300000, guid: 11c261ddcfd40bc4e87e77722a25b47a, type: 3}
 --- !u!58 &887335608
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2273,7 +2295,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1008773681}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10.32, y: -1.21, z: 0}
+  m_LocalPosition: {x: 11.41, y: -1.21, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4229,6 +4251,17 @@ MonoBehaviour:
   hurt: {fileID: 598026866, guid: 83fcd8f88b783414b82a8f648265aa56, type: 3}
   link: {fileID: -1996528685, guid: 83fcd8f88b783414b82a8f648265aa56, type: 3}
   open: {fileID: 1959187280, guid: 83fcd8f88b783414b82a8f648265aa56, type: 3}
+  coll:
+  - {fileID: 8300000, guid: f6c80d133bd0776418467d7a26425a6a, type: 3}
+  - {fileID: 8300000, guid: 06afb2463ff010d4abd5159d52e5e8c7, type: 3}
+  - {fileID: 8300000, guid: 2923ab1f86f7148498ea40cc7f057b06, type: 3}
+  - {fileID: 8300000, guid: d08bd741d768ab14ab57b61b9e1771d3, type: 3}
+  yell:
+  - {fileID: 8300000, guid: 52e02f696fe4d6b4d8d0f31ba960a615, type: 3}
+  - {fileID: 8300000, guid: fc16ed48403739d48af74d5d3be357fc, type: 3}
+  - {fileID: 8300000, guid: b4e3136b3878b1e4a96e2e38f42a1e02, type: 3}
+  selects: {fileID: 8300000, guid: c1094b2ace6faed41924809267746831, type: 3}
+  fly_Audio: {fileID: 8300000, guid: 11c261ddcfd40bc4e87e77722a25b47a, type: 3}
 --- !u!58 &1733878887
 CircleCollider2D:
   m_ObjectHideFlags: 0

@@ -178,6 +178,11 @@ MonoBehaviour:
   hurt: {fileID: -859061584, guid: 83fcd8f88b783414b82a8f648265aa56, type: 3}
   link: {fileID: -1481052712, guid: 83fcd8f88b783414b82a8f648265aa56, type: 3}
   open: {fileID: -543011094, guid: 83fcd8f88b783414b82a8f648265aa56, type: 3}
+  coll: []
+  yell:
+  - {fileID: 8300000, guid: b94ae85d0e59e4342a21e295f9ceec03, type: 3}
+  selects: {fileID: 8300000, guid: eddc04b9b1f3c9b469e15731cc9d5860, type: 3}
+  fly_Audio: {fileID: 8300000, guid: d2b1bfc3e0f589044a3e7d3cea18760d, type: 3}
   Speed: {fileID: 1319252371, guid: 83fcd8f88b783414b82a8f648265aa56, type: 3}
 --- !u!95 &8027279942630868727
 Animator:

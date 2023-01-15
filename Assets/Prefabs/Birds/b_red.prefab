@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5553739666921923674}
   - component: {fileID: 5553739666921923673}
   - component: {fileID: 3385063492714199935}
+  - component: {fileID: 3505000423019168362}
   m_Layer: 0
   m_Name: b_red
   m_TagString: Untagged
@@ -177,3 +178,34 @@ MonoBehaviour:
   hurt: {fileID: 598026866, guid: 83fcd8f88b783414b82a8f648265aa56, type: 3}
   link: {fileID: -1996528685, guid: 83fcd8f88b783414b82a8f648265aa56, type: 3}
   open: {fileID: 1959187280, guid: 83fcd8f88b783414b82a8f648265aa56, type: 3}
+  coll:
+  - {fileID: 8300000, guid: f6c80d133bd0776418467d7a26425a6a, type: 3}
+  - {fileID: 8300000, guid: 06afb2463ff010d4abd5159d52e5e8c7, type: 3}
+  - {fileID: 8300000, guid: 2923ab1f86f7148498ea40cc7f057b06, type: 3}
+  - {fileID: 8300000, guid: d08bd741d768ab14ab57b61b9e1771d3, type: 3}
+  yell:
+  - {fileID: 8300000, guid: 52e02f696fe4d6b4d8d0f31ba960a615, type: 3}
+  - {fileID: 8300000, guid: fc16ed48403739d48af74d5d3be357fc, type: 3}
+  - {fileID: 8300000, guid: b4e3136b3878b1e4a96e2e38f42a1e02, type: 3}
+  selects: {fileID: 8300000, guid: c1094b2ace6faed41924809267746831, type: 3}
+  fly_Audio: {fileID: 8300000, guid: 11c261ddcfd40bc4e87e77722a25b47a, type: 3}
+--- !u!95 &3505000423019168362
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5553739666921923679}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4bc686f26a6e69744add4543515cc0a6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
