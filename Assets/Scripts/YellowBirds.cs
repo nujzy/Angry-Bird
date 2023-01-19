@@ -10,6 +10,6 @@ public class YellowBirds : Birds
         base.Show();
         ShowPP();
         sr.sprite = Speed;
-        rg.velocity *= 2.35F;
+        rg.velocity *= 2.35f;
     }
 }

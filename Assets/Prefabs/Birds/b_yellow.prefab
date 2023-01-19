@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 7329904560143070282}
   - component: {fileID: 7329904560143070281}
   - component: {fileID: 7329904560143070278}
-  - component: {fileID: 8027279942630868727}
   m_Layer: 0
   m_Name: b_yellow
   m_TagString: Untagged
@@ -184,23 +183,3 @@ MonoBehaviour:
   selects: {fileID: 8300000, guid: eddc04b9b1f3c9b469e15731cc9d5860, type: 3}
   fly_Audio: {fileID: 8300000, guid: d2b1bfc3e0f589044a3e7d3cea18760d, type: 3}
   Speed: {fileID: 1319252371, guid: 83fcd8f88b783414b82a8f648265aa56, type: 3}
---- !u!95 &8027279942630868727
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7329904560143070287}
-  m_Enabled: 0
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4bc686f26a6e69744add4543515cc0a6, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0

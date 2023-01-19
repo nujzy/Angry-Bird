@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 public class Birds : MonoBehaviour
 {
-    public float maxdis = 3;
+    private float maxdis = 1.3F;
     private bool put = false;
     public int Mynum;
 
@@ -32,12 +32,9 @@ public class Birds : MonoBehaviour
     public SpringJoint2D sp;
     [HideInInspector]
     public Rigidbody2D rg;
+    protected CircleCollider2D circle;
 
     //动画相关变量
-    private Animator An;
-    private float Anime_Speed=0;
-    private float Anime_Time=0;
-    private AnimatorStateInfo state;
 
     //小鸟贴图相关变量
     protected SpriteRenderer sr;
@@ -51,20 +48,20 @@ public class Birds : MonoBehaviour
     //声音相关变量
     public List<AudioClip> coll;
     public List<AudioClip> yell;
+    public List<AudioClip> shot;
     public AudioClip selects;
     public AudioClip fly_Audio;
+    public AudioClip pull_Audio;
+    public AudioClip dst_Audio;
+
     private void Awake()
     {
         PPs = new List<GameObject> ();
         sp = GetComponent<SpringJoint2D>();
         rg = GetComponent<Rigidbody2D>();   
         sr = GetComponent<SpriteRenderer>();
-        An = GetComponent<Animator>();
-        state = An.GetCurrentAnimatorStateInfo(0);
-        An.SetFloat("Scale", Anime_Speed);
-        An.SetFloat("Ti",Anime_Time);
-        sr.sprite = awak;
-        
+        circle = GetComponent<CircleCollider2D>();
+        sr.sprite = awak;   
     }
     public void Change()
     {
@@ -90,8 +87,6 @@ public class Birds : MonoBehaviour
     }
     public void Jump()
     {
-        Anime_Time = 0;
-        Anime_Speed = 0;
         float a = Random.Range(1.5F, 4F);
        
         if (rg.mass<2)
@@ -108,8 +103,7 @@ public class Birds : MonoBehaviour
             else
             {
                 rg.velocity = new Vector2(rg.velocity.x, rg.velocity.y + 3.75F);
-                int a = Random.Range(-1, 2);    //-1,0,1
-                
+                int a = Random.Range(-1, 2);    //-1,0,1               
             }
             Invoke("Jump", 1);
         }
@@ -140,30 +134,26 @@ public class Birds : MonoBehaviour
     }
     private void Fly()  //小鸟的飞行
     {
-        if(Live)
-        {
-            AudioPlay(fly_Audio);
-            Next();
-            Live = false;
-        }
+        AudioPlay(fly_Audio);
+        AudioPlay(shot);
+        Next();
+        Live = false;
         rg.freezeRotation=false;
         sp.enabled = false;
         sr.sprite = fly;
     }
-    private void Xian()//小鸟划线的脚本
+    protected void Xian(Transform targets)//小鸟划线的脚本
     {
-        if(x==0 || (transform.position-new Vector3(x,y,0)).magnitude>0.35)
+        if (x ==0 || (targets.position-new Vector3(x,y,0)).magnitude>0.35)
         {
-            PP2 = Instantiate(PP) as GameObject;
-            PP2.transform.position = transform.position;
+            PP2 = Instantiate(PP, targets.position, Quaternion.identity) as GameObject;
             float v3 = (size % 3 + 2.45F) / 10 ;
             size ++;
             PP2.transform.localScale = new Vector3(v3, v3, v3);
             x = PP2.transform.position.x;
             y = PP2.transform.position.y;
             PPs.Add(PP2);
-        }
-            
+        }    
     }
     protected void ShowPP()
     {
@@ -200,6 +190,7 @@ public class Birds : MonoBehaviour
         {
             gameObject.SetActive(false);
             Instantiate(boom, transform.position, Quaternion.identity);
+            AudioPlay(dst_Audio);
             GameManage.instance.Win();
         }
     }
@@ -208,10 +199,11 @@ public class Birds : MonoBehaviour
         if (!Live && Live2)  //防止使用前小鸟的碰撞
         {
             Live2 = false;
+            AudioPlay(coll);
             sr.sprite = hurt;
             Invoke("Hide", 2.5F);
         }
-        else if (!Live2 && collision.relativeVelocity.magnitude > 4)    //撞击后存在时间延长
+        else if (!Live2 && (collision.relativeVelocity.magnitude > 3 || rg.velocity.magnitude != 0))    //撞击后存在时间延长
         {
             Stime = 2.5F;
             if (collision.relativeVelocity.magnitude > 6)
@@ -227,30 +219,25 @@ public class Birds : MonoBehaviour
         if (active)
         {
             AudioPlay(selects);
+            AudioPlay(pull_Audio);
             rg.isKinematic = true;
         }
     }
     private void OnMouseUp()
     {
         put = false;
+        circle.enabled = true;
         rg.isKinematic = false;
-        rg.angularVelocity = 0;
         if (Mynum >= GameManage.instance.Num && rg.velocity.y == 0)
         {
             rg.velocity = new Vector2(rg.velocity.x, rg.velocity.y + 3 / rg.mass);
             AudioPlay(selects);
         }
-        rg.MoveRotation(rg.rotation+30);
-        //划线禁用
-        po_l.enabled = false;
-        po_r.enabled = false;
         if (active)
         {
             if (Vector3.Distance(transform.position, position_r.position) > 0.3)
             {
                 Invoke("Fly", 0.1F);
-                Pad.transform.position = new Vector3(-5.39F, -0.51F, 0);
-                Line(Pad);
                 rg.constraints = ~RigidbodyConstraints2D.FreezePosition;
             }
             else
@@ -270,6 +257,7 @@ public class Birds : MonoBehaviour
         if (put && active && Live)//鼠标按下
         {
             sr.sprite = pull;
+            circle.enabled = false;
             transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition);   //鸟相机一平面，相机无法照射
             transform.position += new Vector3(0, 0, -Camera.main.transform.position.z); //减去z轴偏移
             if (Vector3.Distance(transform.position, position_r.position) > maxdis)
@@ -283,9 +271,14 @@ public class Birds : MonoBehaviour
         {
             Line(gameObject);
         }
+        else
+        {
+            Pad.transform.position = GameManage.instance.p_org;
+            Line(Pad);
+        }
         if (!Live && Live2)
         {
-            Xian();
+            Xian(transform);
             if (active && Input.GetMouseButtonDown(0))
             {
                 Show();

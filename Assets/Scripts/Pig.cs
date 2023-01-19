@@ -8,16 +8,11 @@ public class Pig : MonoBehaviour
     public float mins = 5;
     public bool Ispig = false; //判定对象是猪还是物体
 
-    //变化图片的变量
     public Sprite hurt;
     private SpriteRenderer sr;
 
-    //外部引用的对象
     public GameObject boom;
     public GameObject Score;
-    private void OnTriggerEnter2D(Collider2D collision)//出发检测 一个rg 只有自己反馈
-    {
-    }
     private void Die()
     {
         if(Ispig)
