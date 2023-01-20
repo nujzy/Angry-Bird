@@ -73,13 +73,13 @@ public class BlueBirds : Birds
                 Li *= 2F;
                 break;
             case "wood":    //Ä¾Í·
-
+                Li *= 0.75F;
                 break;
             case "iron":    //Ìú¿é
-
+                Li *= 0.75F;
                 break;
             case "pig":
-                Li *= 1.75F;
+                Li *= 1.65F;
                 break;
         }
     }
