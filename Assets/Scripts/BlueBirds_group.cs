@@ -8,7 +8,7 @@ public class BlueBirds_group : MonoBehaviour
     private bool Tc;
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Tc = true;
+
     }
 }
     

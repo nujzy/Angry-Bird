@@ -4,6 +4,7 @@ using UnityEngine;
 public class Birds : MonoBehaviour
 {
     private float maxdis = 1.3F;
+    public float Li=1F;   //碰撞倍数
     private bool put = false;
     public int Mynum;
 
@@ -194,7 +195,7 @@ public class Birds : MonoBehaviour
             GameManage.instance.Win();
         }
     }
-    public void OnCollisionEnter2D(Collision2D collision)   //小鸟碰到东西后，开始消失判定
+    protected void CommonCollision(Collision2D collision)   //小鸟碰到东西后，开始消失判定
     {
         if (!Live && Live2)  //防止使用前小鸟的碰撞
         {
@@ -206,7 +207,7 @@ public class Birds : MonoBehaviour
         else if (!Live2 && (collision.relativeVelocity.magnitude > 3 || rg.velocity.magnitude != 0))    //撞击后存在时间延长
         {
             Stime = 2.5F;
-            if (collision.relativeVelocity.magnitude > 6)
+            if (collision.relativeVelocity.magnitude > 4)
             {
                 Instantiate(boom, transform.position, Quaternion.identity);
                 AudioPlay(coll);

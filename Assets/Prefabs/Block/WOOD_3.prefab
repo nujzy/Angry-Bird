@@ -14,8 +14,8 @@ GameObject:
   - component: {fileID: 5752101260093416871}
   - component: {fileID: 5752101260093416859}
   m_Layer: 0
-  m_Name: BLOCKS_1_78 (1)
-  m_TagString: Untagged
+  m_Name: WOOD_3
+  m_TagString: wood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -73,8 +73,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -999493095
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: -121627941, guid: adcea6c4a300d034c846f10dfb482c28, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -125,7 +125,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1.7
+  m_Mass: 2
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -146,8 +146,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f44e203ac509e4643a56c184f00591db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxs: 10
-  mins: 5
+  maxs: 20
+  mins: 13
   Ispig: 0
   hurt: {fileID: -1018881876, guid: adcea6c4a300d034c846f10dfb482c28, type: 3}
   boom: {fileID: 5174335192159222314, guid: 5d6cc5c134a51184db04d143cbef5627, type: 3}

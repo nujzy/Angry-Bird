@@ -14,6 +14,8 @@ public class GameManage : MonoBehaviour
 
     public List<AudioClip> win_Audio;
     public List <AudioClip> lose_Audio;
+    public List<AudioClip> next_Audio;
+    public List<AudioClip> start_Audio;
 
     private bool wins=false;
     private void Awake()//指定自己,供其它类引用
@@ -25,6 +27,7 @@ public class GameManage : MonoBehaviour
     }
     private void Start()
     {
+        AudioPlay(start_Audio);
         Itz();
         for (int i = 0; i < bird.Count; i++)
         {
@@ -41,20 +44,18 @@ public class GameManage : MonoBehaviour
     }
     public void Win()   //只响应胜利和失败
     {
-        if (pigs.Count > 0 && bird.Count == 0)   //失败
+        if (pigs.Count > 0 && bird.Count == Num-1)   //失败
         {
-            print("你赢赢赢，最后输光光");
             AudioPlay(lose_Audio);
         }
         else if(pigs.Count<=0 && !wins)  //胜利
         {
             wins = true;
-            print("你赢赢赢，最后赢麻了");
             AudioPlay(win_Audio);
         }
     }
     public void Itz()//小鸟初始化
-    {   
+    {
         for(int i=Num; i<bird.Count; i++)
         {
             if(i == Num)
@@ -76,5 +77,9 @@ public class GameManage : MonoBehaviour
             }
         }
         Num ++;
+        if (bird.Count > Num - 1)
+        {
+            AudioPlay(next_Audio);
+        }
     }
 }

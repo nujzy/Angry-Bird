@@ -63,6 +63,26 @@ public class BlueBirds : Birds
         }
         Invoke("Cllon", 0.15F);
     }
+    private void OnCollisionEnter2D(Collision2D collision)  //¿¹ÐÔÉèÖÃ
+    {
+        CommonCollision(collision);
+        var tag = collision.collider.tag;
+        switch (tag)
+        {
+            case "glass":   //²£Á§
+                Li *= 2F;
+                break;
+            case "wood":    //Ä¾Í·
+
+                break;
+            case "iron":    //Ìú¿é
+
+                break;
+            case "pig":
+                Li *= 1.75F;
+                break;
+        }
+    }
     /*private void FixedUpdate()
     {
         if (!Live && !active)

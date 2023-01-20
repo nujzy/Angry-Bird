@@ -26,13 +26,16 @@ public class Pig : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)//碰撞检测 两个rg 都会反馈
     {
-        
-        float Li = collision.relativeVelocity.magnitude;
-        if (Li>maxs)
+        float Lis = collision.relativeVelocity.magnitude * GameManage.instance.bird[GameManage.instance.Num - 1].Li;
+        if (Ispig && GameManage.instance.bird[GameManage.instance.Num - 1].Li == 1F)
+        {
+            Lis *= 1.45F;
+        }
+        if (Lis>maxs)
         {
             Die();
         }
-        else if(Li < maxs && Li>mins )
+        else if(Lis < maxs && Lis>mins )
         {
             sr.sprite = hurt;
             maxs = maxs / 2;
