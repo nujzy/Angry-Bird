@@ -360,7 +360,7 @@ GameObject:
   - component: {fileID: 151881134}
   m_Layer: 0
   m_Name: pig (1)
-  m_TagString: Untagged
+  m_TagString: pig
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -616,7 +616,7 @@ GameObject:
   - component: {fileID: 265364242}
   m_Layer: 0
   m_Name: pig (2)
-  m_TagString: Untagged
+  m_TagString: pig
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1899,7 +1899,7 @@ GameObject:
   - component: {fileID: 892957519}
   m_Layer: 0
   m_Name: pig (3)
-  m_TagString: Untagged
+  m_TagString: pig
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2175,7 +2175,7 @@ PrefabInstance:
     - target: {fileID: 5988048818790663265, guid: 47bc18eb7db379d4e99231d9a57d6253, type: 3}
       propertyPath: bird.Array.data[1]
       value: 
-      objectReference: {fileID: 5143179445035604719}
+      objectReference: {fileID: 1733878892}
     - target: {fileID: 5988048818790663265, guid: 47bc18eb7db379d4e99231d9a57d6253, type: 3}
       propertyPath: bird.Array.data[2]
       value: 
@@ -2195,7 +2195,7 @@ PrefabInstance:
     - target: {fileID: 5988048818790663265, guid: 47bc18eb7db379d4e99231d9a57d6253, type: 3}
       propertyPath: bird.Array.data[6]
       value: 
-      objectReference: {fileID: 1733878886}
+      objectReference: {fileID: 5143179445035604719}
     - target: {fileID: 5988048818790663265, guid: 47bc18eb7db379d4e99231d9a57d6253, type: 3}
       propertyPath: pigs.Array.data[0]
       value: 
@@ -2752,7 +2752,7 @@ GameObject:
   - component: {fileID: 1070874069}
   m_Layer: 0
   m_Name: pig
-  m_TagString: Untagged
+  m_TagString: pig
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4160,63 +4160,14 @@ GameObject:
   - component: {fileID: 1733878889}
   - component: {fileID: 1733878888}
   - component: {fileID: 1733878887}
-  - component: {fileID: 1733878886}
+  - component: {fileID: 1733878892}
   m_Layer: 0
-  m_Name: b_red (3)
+  m_Name: b_black
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1733878886
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1733878885}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff533a585651b0d449a0d7d1002a0000, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Li: 1
-  Mynum: 0
-  position_r: {fileID: 1120371203}
-  position_l: {fileID: 198157944}
-  po_r: {fileID: 1120371204}
-  po_l: {fileID: 198157945}
-  Pad: {fileID: 1606261415}
-  boom: {fileID: 5174335192159222314, guid: 5d6cc5c134a51184db04d143cbef5627, type: 3}
-  PP: {fileID: 6205346999462627497, guid: 5a4e97f2989d0f9408a2faf65beeacc1, type: 3}
-  PP2: {fileID: 0}
-  active: 0
-  Live: 1
-  sp: {fileID: 0}
-  rg: {fileID: 0}
-  awak: {fileID: -1416519928, guid: 83fcd8f88b783414b82a8f648265aa56, type: 3}
-  pull: {fileID: 1959187280, guid: 83fcd8f88b783414b82a8f648265aa56, type: 3}
-  fly: {fileID: 1752611871, guid: 83fcd8f88b783414b82a8f648265aa56, type: 3}
-  hurt: {fileID: 598026866, guid: 83fcd8f88b783414b82a8f648265aa56, type: 3}
-  link: {fileID: -1996528685, guid: 83fcd8f88b783414b82a8f648265aa56, type: 3}
-  open: {fileID: 1959187280, guid: 83fcd8f88b783414b82a8f648265aa56, type: 3}
-  coll:
-  - {fileID: 8300000, guid: f6c80d133bd0776418467d7a26425a6a, type: 3}
-  - {fileID: 8300000, guid: 06afb2463ff010d4abd5159d52e5e8c7, type: 3}
-  - {fileID: 8300000, guid: 2923ab1f86f7148498ea40cc7f057b06, type: 3}
-  - {fileID: 8300000, guid: d08bd741d768ab14ab57b61b9e1771d3, type: 3}
-  yell:
-  - {fileID: 8300000, guid: 52e02f696fe4d6b4d8d0f31ba960a615, type: 3}
-  - {fileID: 8300000, guid: fc16ed48403739d48af74d5d3be357fc, type: 3}
-  - {fileID: 8300000, guid: b4e3136b3878b1e4a96e2e38f42a1e02, type: 3}
-  shot:
-  - {fileID: 8300000, guid: e8250fd805c83b74282348f5e2ff0976, type: 3}
-  - {fileID: 8300000, guid: 72f0810b19f34f84ea297cc940a46649, type: 3}
-  - {fileID: 8300000, guid: 102e18d7b7b5ecb45b8ba160a7e9705f, type: 3}
-  selects: {fileID: 8300000, guid: c1094b2ace6faed41924809267746831, type: 3}
-  fly_Audio: {fileID: 8300000, guid: 11c261ddcfd40bc4e87e77722a25b47a, type: 3}
-  pull_Audio: {fileID: 8300000, guid: 9f54a7283e17cbb47ba9c20bb77a6e08, type: 3}
-  dst_Audio: {fileID: 8300000, guid: ee84a730940604d4790fcbe14f8a5a80, type: 3}
 --- !u!58 &1733878887
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4230,9 +4181,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.010241985, y: -0.099999994}
   serializedVersion: 2
-  m_Radius: 0.2
+  m_Radius: 0.31265783
 --- !u!231 &1733878888
 SpringJoint2D:
   m_ObjectHideFlags: 0
@@ -4265,7 +4216,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 1.75
   m_LinearDrag: 0
   m_AngularDrag: 3.3
   m_GravityScale: 1
@@ -4315,7 +4266,7 @@ SpriteRenderer:
   m_SortingLayerID: -999493095
   m_SortingLayer: 1
   m_SortingOrder: 1
-  m_Sprite: {fileID: -1416519928, guid: 83fcd8f88b783414b82a8f648265aa56, type: 3}
+  m_Sprite: {fileID: -1073551036, guid: 83fcd8f88b783414b82a8f648265aa56, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4334,13 +4285,64 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1733878885}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.9, y: -1.96, z: 0}
+  m_LocalPosition: {x: -8.9, y: -1.673, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1733878892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1733878885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 953a917b704750d4e8badbf384103253, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Li: 1
+  Mynum: 0
+  position_r: {fileID: 1120371203}
+  position_l: {fileID: 198157944}
+  po_r: {fileID: 1120371204}
+  po_l: {fileID: 198157945}
+  Pad: {fileID: 1606261415}
+  boom: {fileID: 0}
+  PP: {fileID: 6205346999462627497, guid: 5a4e97f2989d0f9408a2faf65beeacc1, type: 3}
+  PP2: {fileID: 0}
+  active: 0
+  Live: 1
+  sp: {fileID: 0}
+  rg: {fileID: 0}
+  awak: {fileID: -1073551036, guid: 83fcd8f88b783414b82a8f648265aa56, type: 3}
+  pull: {fileID: 879108613, guid: 83fcd8f88b783414b82a8f648265aa56, type: 3}
+  fly: {fileID: -1946478922, guid: 83fcd8f88b783414b82a8f648265aa56, type: 3}
+  hurt: {fileID: 1306928438, guid: 83fcd8f88b783414b82a8f648265aa56, type: 3}
+  link: {fileID: 1384772815, guid: 83fcd8f88b783414b82a8f648265aa56, type: 3}
+  open: {fileID: 879108613, guid: 83fcd8f88b783414b82a8f648265aa56, type: 3}
+  coll:
+  - {fileID: 8300000, guid: 99c6b93c896a31f4f9ea747936001444, type: 3}
+  - {fileID: 8300000, guid: 96a43e952b05cdd4abf1b9cb63676c3b, type: 3}
+  - {fileID: 8300000, guid: cbbba5944ffdac640b51fab19cbc0bf6, type: 3}
+  - {fileID: 8300000, guid: a25c67919b9385648b48afd537a3e660, type: 3}
+  yell:
+  - {fileID: 8300000, guid: 9ddd852d308d4ae41b3df5a84a8b3cca, type: 3}
+  shot:
+  - {fileID: 8300000, guid: e8250fd805c83b74282348f5e2ff0976, type: 3}
+  - {fileID: 8300000, guid: 72f0810b19f34f84ea297cc940a46649, type: 3}
+  - {fileID: 8300000, guid: 102e18d7b7b5ecb45b8ba160a7e9705f, type: 3}
+  selects: {fileID: 8300000, guid: 203d6f1a53c62644bad020bf0ec54df1, type: 3}
+  fly_Audio: {fileID: 8300000, guid: 587f3608367328547b12cef6add7aded, type: 3}
+  pull_Audio: {fileID: 8300000, guid: 203d6f1a53c62644bad020bf0ec54df1, type: 3}
+  dst_Audio: {fileID: 8300000, guid: 9ddd852d308d4ae41b3df5a84a8b3cca, type: 3}
+  Prefer:
+  - {fileID: 2062264497, guid: 83fcd8f88b783414b82a8f648265aa56, type: 3}
+  - {fileID: -1849410522, guid: 83fcd8f88b783414b82a8f648265aa56, type: 3}
+  - {fileID: 1306928438, guid: 83fcd8f88b783414b82a8f648265aa56, type: 3}
 --- !u!1 &1802490460
 GameObject:
   m_ObjectHideFlags: 0

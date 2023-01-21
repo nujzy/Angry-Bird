@@ -26,8 +26,8 @@ public class Birds : MonoBehaviour
 
     public bool active = false;      //小鸟是否是活动的
     public bool Live = true;         //判定小鸟是否一重活着(飞出去就算死了)
-    private bool Live2 = true;       //判定小鸟是否二重或者(碰到东西算死了)
-    private float Stime;             //小鸟消失时间(碰到东西后时间重置
+    protected bool Live2 = true;       //判定小鸟是否二重或者(碰到东西算死了)
+    protected float Stime;             //小鸟消失时间(碰到东西后时间重置
 
     [HideInInspector]
     public SpringJoint2D sp;
@@ -97,14 +97,16 @@ public class Birds : MonoBehaviour
     {
         if(Mynum >= GameManage.instance.Num && Live)
         {
-            if (Random.Range(0, 2) == 0)
+            if (rg.velocity.y == 0)
             {
-                rg.velocity = new Vector2(rg.velocity.x, rg.velocity.y + 2.5F);
-            }
-            else
-            {
-                rg.velocity = new Vector2(rg.velocity.x, rg.velocity.y + 3.75F);
-                int a = Random.Range(-1, 2);    //-1,0,1               
+                if (Random.Range(0, 2) == 0)
+                {
+                    rg.velocity = new Vector2(rg.velocity.x, rg.velocity.y + 2.5F);
+                }
+                else
+                {
+                    rg.velocity = new Vector2(rg.velocity.x, rg.velocity.y + 3.75F);              
+                }
             }
             Invoke("Jump", 1);
         }
@@ -231,7 +233,7 @@ public class Birds : MonoBehaviour
         rg.isKinematic = false;
         if (Mynum >= GameManage.instance.Num && rg.velocity.y == 0)
         {
-            rg.velocity = new Vector2(rg.velocity.x, rg.velocity.y + 3 / rg.mass);
+            rg.velocity += new Vector2(0, 3 / rg.mass);
             AudioPlay(selects);
         }
         if (active)
@@ -253,7 +255,7 @@ public class Birds : MonoBehaviour
         active = false;
         AudioPlay(yell);
     }
-    private void Update()
+    protected void Update()
     {
         if (put && active && Live)//鼠标按下
         {

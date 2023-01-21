@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Pig : MonoBehaviour
+public class Collison_Moveble : MonoBehaviour
 {
     public float maxs = 10;
     public float mins = 5;
@@ -38,12 +38,14 @@ public class Pig : MonoBehaviour
         else if(Lis < maxs && Lis>mins )
         {
             sr.sprite = hurt;
-            maxs = maxs / 2;
-            mins = mins / 2;
+            maxs /= 2;
+            mins /= 2;
         }
     }
-    private void Awake()
+    private void Start()
     {
-        sr= GetComponent<SpriteRenderer>();
+        sr = GetComponent<SpriteRenderer>();
+        Rigidbody2D rb=GetComponent<Rigidbody2D>();
+        GameManage.instance.Movebles.Add(rb);
     }
 }
