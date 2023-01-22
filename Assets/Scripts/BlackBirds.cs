@@ -18,7 +18,7 @@ public class BlackBirds : Birds
             {
                 if (list[i] != null)
                 {
-                    if (Vector3.Distance(transform.position, list[i].transform.position) < 3.5)
+                    if (Vector3.Distance(transform.position, list[i].transform.position) < 5)
                     {
                         Moves.Add(list[i]);
                     }
@@ -28,7 +28,7 @@ public class BlackBirds : Birds
             {
                 if (Moves[i] != null)
                 {
-                    float speed = 9F / Vector3.Distance(transform.position, Moves[i].transform.position);
+                    float speed = 8F / Mathf.Pow(Vector3.Distance(transform.position, Moves[i].transform.position)-0.1F,1.35F)+0.75F;
                     Vector2 Direction = (new Vector2(Moves[i].position.x, Moves[i].position.y) - new Vector2(transform.position.x, transform.position.y)).normalized * speed;
                     Moves[i].velocity += Direction;
                 }
@@ -51,7 +51,7 @@ public class BlackBirds : Birds
         else
         { 
             Prefer_Num++;
-            Invoke("TimeOut", 0.7F - Prefer_Num / 10);
+            Invoke("TimeOut", 0.25F + Prefer_Num / 10);
         }
     }
     public override void Show()
@@ -84,7 +84,7 @@ public class BlackBirds : Birds
                 break;
         }
     }
-    private void Update()
+    private new void Update()
     {
         base.Update();
         if(Input.GetMouseButtonDown(0) && !Live2 )
