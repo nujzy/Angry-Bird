@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class RedBirds : Birds
 {
-    private void OnCollisionEnter2D(Collision2D collision)  //抗性设置
+    private new void OnCollisionEnter2D(Collision2D collision)  //抗性设置
     {
-        CommonCollision(collision);
+        base.OnCollisionEnter2D(collision);
         var tag = collision.collider.tag;
         switch (tag)
         {

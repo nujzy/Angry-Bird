@@ -197,7 +197,7 @@ public class Birds : MonoBehaviour
             GameManage.instance.Win();
         }
     }
-    protected void CommonCollision(Collision2D collision)   //小鸟碰到东西后，开始消失判定
+    protected void OnCollisionEnter2D(Collision2D collision)   //小鸟碰到东西后，开始消失判定
     {
         if (!Live && Live2)  //防止使用前小鸟的碰撞
         {

@@ -28,7 +28,11 @@ public class BlackBirds : Birds
             {
                 if (Moves[i] != null)
                 {
-                    float speed = 8F / Mathf.Pow(Vector3.Distance(transform.position, Moves[i].transform.position)-0.1F,1.35F)+0.75F;
+                    float speed = 10F / Mathf.Pow(Vector3.Distance(transform.position, Moves[i].transform.position)-0.1F,1.35F)+0.75F / Mathf.Pow(Moves[i].mass,1.25F);
+                    if(Moves[i].tag=="pig")
+                    {
+                        speed += 1.5F;
+                    }
                     Vector2 Direction = (new Vector2(Moves[i].position.x, Moves[i].position.y) - new Vector2(transform.position.x, transform.position.y)).normalized * speed;
                     Moves[i].velocity += Direction;
                 }
@@ -59,7 +63,7 @@ public class BlackBirds : Birds
         base.Show();
         Booms();
     }
-    private void OnCollisionEnter2D(Collision2D collision) 
+    private new void OnCollisionEnter2D(Collision2D collision) 
     {
         if(!Live && Live2)
         {
