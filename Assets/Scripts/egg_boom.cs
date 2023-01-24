@@ -15,7 +15,7 @@ public class egg_boom : MonoBehaviour
         {
             if (list[i] != null)
             {
-                if (Vector3.Distance(Position, list[i].transform.position) < 2.5)
+                if (Vector3.Distance(Position, list[i].transform.position) < 2)
                 {
                     boomList.Add(list[i]);
                 }
@@ -27,13 +27,13 @@ public class egg_boom : MonoBehaviour
             {
                 float Dis = Vector3.Distance(Position, boomList[i].transform.position);
                 Rigidbody2D srg = boomList[i].GetComponent<Rigidbody2D>();
-                if (Dis < 1.2F)
+                if (Dis < 0.6F && boomList[i].GetComponent<Collison_Moveble>() != null)
                 {
                     boomList[i].GetComponent<Collison_Moveble>().Die();
                 }
-                else if (Dis < 1.75F)
+                else if (Dis < 1.5F && boomList[i].GetComponent<Collison_Moveble>() != null)
                 {
-                    boomList[i].GetComponent<Collison_Moveble>().Ht(14 * (3.5F - Dis));
+                    boomList[i].GetComponent<Collison_Moveble>().Ht(14 * (3F - Dis));
                 }
                 float speed = 2F / Mathf.Pow(Dis, 1.35F) + 0.75F / Mathf.Pow(srg.mass, 1.25F);
                 Vector2 Direction = (new Vector2(srg.position.x, srg.position.y) - new Vector2(Position.x, Position.y)).normalized * speed;

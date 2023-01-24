@@ -30,13 +30,18 @@ public class BlackBirds : Birds
                 {
                     float Dis = Vector3.Distance(transform.position, Moves[i].transform.position);
                     Rigidbody2D srg = Moves[i].GetComponent<Rigidbody2D>();
-                    float speed = 10.5F / Mathf.Pow(Dis,1.35F)+0.75F / Mathf.Pow(srg.mass,1.25F);
-                    Vector2 Direction = (new Vector2(srg.position.x, srg.position.y) - new Vector2(transform.position.x, transform.position.y)).normalized * speed;
-                    srg.velocity += Direction;
+                    if (Dis < 2.5F && Moves[i].GetComponent<Collison_Moveble>() != null)
+                    {
+                        Moves[i].GetComponent<Collison_Moveble>().Ht(12 * (4F - Dis));
+                    }
+                    float speed = 10.5F / Mathf.Pow(Dis,1.35F)+0.75F / Mathf.Pow(srg.mass,1.25F);                  
                     if (Moves[i].tag == "pig")
                     {
                         speed += 1.5F;
                     }
+                    Vector2 Direction = (new Vector2(srg.position.x, srg.position.y) - new Vector2(transform.position.x, transform.position.y)).normalized * speed;
+                    if(Moves[i] != gameObject)
+                        Moves[i].GetComponent<Rigidbody2D>().velocity += Direction;
                 }
             }
             if(!Live2)
