@@ -6,7 +6,7 @@ public class GameManage : MonoBehaviour
 {
     public List<Birds> bird;
     public List<Collison_Moveble> pigs;
-    public List<Rigidbody2D> Movebles = new List<Rigidbody2D>();
+    public List<GameObject> Movebles = new List<GameObject>();
 
     [HideInInspector]
     public int Num; //当前的小鸟数目
@@ -32,7 +32,7 @@ public class GameManage : MonoBehaviour
         Itz();
         for (int i = 0; i < bird.Count; i++)
         {
-            Movebles.Add(bird[i].rg);
+            Movebles.Add(bird[i].gameObject);
             bird[i].Mynum = i;
             bird[i].Change();
             bird[i].Jump();

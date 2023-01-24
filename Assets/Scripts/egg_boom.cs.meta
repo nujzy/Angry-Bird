@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: bae2f0858441fb642a0e9dc1b65524e9
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - Boom: {fileID: 5174335192159222314, guid: 95d01b297201da04087aad70eed254a3, type: 3}
+  - Boom_Audio: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

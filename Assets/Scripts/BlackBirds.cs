@@ -7,13 +7,13 @@ public class BlackBirds : Birds
     private int Prefer_Num=0;
     private bool Isbom;
     public Sprite[] Prefer = new Sprite[3];
-    private List<Rigidbody2D> Moves = new List<Rigidbody2D>();
+    private List<GameObject> Moves = new List<GameObject>();
     private void Booms()
     {
         if (!Isbom)
         {
             Isbom = true;
-            List<Rigidbody2D> list = GameManage.instance.Movebles;
+            List<GameObject> list = GameManage.instance.Movebles;
             for (int i = 0; i < list.Count; i++)
             {
                 if (list[i] != null)
@@ -28,13 +28,15 @@ public class BlackBirds : Birds
             {
                 if (Moves[i] != null)
                 {
-                    float speed = 10F / Mathf.Pow(Vector3.Distance(transform.position, Moves[i].transform.position)-0.1F,1.35F)+0.75F / Mathf.Pow(Moves[i].mass,1.25F);
-                    if(Moves[i].tag=="pig")
+                    float Dis = Vector3.Distance(transform.position, Moves[i].transform.position);
+                    Rigidbody2D srg = Moves[i].GetComponent<Rigidbody2D>();
+                    float speed = 10.5F / Mathf.Pow(Dis,1.35F)+0.75F / Mathf.Pow(srg.mass,1.25F);
+                    Vector2 Direction = (new Vector2(srg.position.x, srg.position.y) - new Vector2(transform.position.x, transform.position.y)).normalized * speed;
+                    srg.velocity += Direction;
+                    if (Moves[i].tag == "pig")
                     {
                         speed += 1.5F;
                     }
-                    Vector2 Direction = (new Vector2(Moves[i].position.x, Moves[i].position.y) - new Vector2(transform.position.x, transform.position.y)).normalized * speed;
-                    Moves[i].velocity += Direction;
                 }
             }
             if(!Live2)
