@@ -5,6 +5,7 @@ using UnityEngine;
 public class egg_boom : MonoBehaviour
 {
     public GameObject Boom;
+    public GameObject Fire;
     public AudioClip Boom_Audio;
     private List<GameObject> boomList = new List<GameObject>();
 
@@ -33,7 +34,7 @@ public class egg_boom : MonoBehaviour
                 }
                 else if (Dis < 1.5F && boomList[i].GetComponent<Collison_Moveble>() != null)
                 {
-                    boomList[i].GetComponent<Collison_Moveble>().Ht(14 * (3F - Dis));
+                    boomList[i].GetComponent<Collison_Moveble>().Ht(15 * (3F - Dis));
                 }
                 float speed = 2F / Mathf.Pow(Dis, 1.35F) + 0.75F / Mathf.Pow(srg.mass, 1.25F);
                 Vector2 Direction = (new Vector2(srg.position.x, srg.position.y) - new Vector2(Position.x, Position.y)).normalized * speed;
@@ -51,6 +52,7 @@ public class egg_boom : MonoBehaviour
         Destroy(gameObject);
         AudioPlay(Boom_Audio);
         Instantiate(Boom, transform.position, Quaternion.identity);
+        Instantiate(Fire, transform.position, Quaternion.identity);
         Booms(vector3);   
     }
 }

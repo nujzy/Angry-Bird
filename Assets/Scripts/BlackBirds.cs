@@ -8,6 +8,8 @@ public class BlackBirds : Birds
     private bool Isbom;
     public Sprite[] Prefer = new Sprite[3];
     private List<GameObject> Moves = new List<GameObject>();
+    public GameObject Fire;
+
     private void Booms()
     {
         if (!Isbom)
@@ -30,9 +32,9 @@ public class BlackBirds : Birds
                 {
                     float Dis = Vector3.Distance(transform.position, Moves[i].transform.position);
                     Rigidbody2D srg = Moves[i].GetComponent<Rigidbody2D>();
-                    if (Dis < 2.5F && Moves[i].GetComponent<Collison_Moveble>() != null)
+                    if (Dis < 2F && Moves[i].GetComponent<Collison_Moveble>() != null)
                     {
-                        Moves[i].GetComponent<Collison_Moveble>().Ht(12 * (4F - Dis));
+                        Moves[i].GetComponent<Collison_Moveble>().Ht(12 * (3F - Dis));
                     }
                     float speed = 10.5F / Mathf.Pow(Dis,1.35F)+0.75F / Mathf.Pow(srg.mass,1.25F);                  
                     if (Moves[i].tag == "pig")
@@ -50,6 +52,7 @@ public class BlackBirds : Birds
             }
             Stime = 0;
             Hide();
+            Instantiate(Fire, transform.position, Quaternion.identity);
         }
     }
     private void TimeOut()

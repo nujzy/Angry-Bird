@@ -196,3 +196,4 @@ MonoBehaviour:
   - {fileID: 2062264497, guid: 83fcd8f88b783414b82a8f648265aa56, type: 3}
   - {fileID: -1849410522, guid: 83fcd8f88b783414b82a8f648265aa56, type: 3}
   - {fileID: 1306928438, guid: 83fcd8f88b783414b82a8f648265aa56, type: 3}
+  Fire: {fileID: 4460196074144005023, guid: 21c93c56222409e4d8fd22ca1b3fa0e3, type: 3}
