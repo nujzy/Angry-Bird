@@ -6,6 +6,7 @@ public class WhiteBirds : Birds
 {
     public Sprite Used;
     private GameObject Son;
+    private bool Isrote;
 
     private void Start()
     {
@@ -21,11 +22,12 @@ public class WhiteBirds : Birds
         Son.SetActive(true);
         Son.transform.position = transform.position + new Vector3(0, -0.9F, 0);
         rg.velocity += new Vector2(0, 8);
+        rg.freezeRotation = false;
+        rg.angularVelocity += 8848;
         Rigidbody2D srg = Son.GetComponent<Rigidbody2D>();
         srg.velocity += new Vector2(0, -4);
-
+        Isrote = true;
     }
-
     private new void OnCollisionEnter2D(Collision2D collision)  //øπ–‘…Ë÷√
     {
         base.OnCollisionEnter2D(collision);

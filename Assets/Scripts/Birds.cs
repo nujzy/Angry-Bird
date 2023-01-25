@@ -32,7 +32,7 @@ public class Birds : MonoBehaviour
     [HideInInspector]
     public SpringJoint2D sp;
     [HideInInspector]
-    public Rigidbody2D rg;
+    public Rigidbody2D rg;   
     protected CircleCollider2D circle;
 
     //动画相关变量
@@ -89,8 +89,7 @@ public class Birds : MonoBehaviour
     public void Jump()
     {
         float a = Random.Range(1.5F, 4F);
-       
-        if (rg.mass<2)
+        if (rg.mass<2.1)
             Invoke("Anime_Jump", a);
     }
     private void Anime_Jump()
@@ -101,11 +100,17 @@ public class Birds : MonoBehaviour
             {
                 if (Random.Range(0, 2) == 0)
                 {
-                    rg.velocity = new Vector2(rg.velocity.x, rg.velocity.y + 2.5F);
+                    rg.velocity = new Vector2(rg.velocity.x, rg.velocity.y + 3.5F-rg.mass);
                 }
                 else
                 {
-                    rg.velocity = new Vector2(rg.velocity.x, rg.velocity.y + 3.75F);              
+                    rg.velocity = new Vector2(rg.velocity.x, rg.velocity.y + 4.75F-rg.mass);
+                    if (rg.mass < 2)
+                    {
+                        rg.rotation = 0;
+                        int a = Random.Range(-1, 2);
+                        rg.angularVelocity += 1305 * a;   //Angular Drag=3.3 Angular Rotate:Rotate = 10:3.026(精确两位)
+                    }
                 }
             }
             Invoke("Jump", 1);
@@ -140,8 +145,8 @@ public class Birds : MonoBehaviour
         AudioPlay(fly_Audio);
         AudioPlay(shot);
         Next();
+        rg.freezeRotation = false;
         Live = false;
-        rg.freezeRotation=false;
         sp.enabled = false;
         sr.sprite = fly;
     }
@@ -233,7 +238,7 @@ public class Birds : MonoBehaviour
         rg.isKinematic = false;
         if (Mynum >= GameManage.instance.Num && rg.velocity.y == 0)
         {
-            rg.velocity += new Vector2(0, 3 / rg.mass);
+            rg.velocity += new Vector2(0, 4 / rg.mass);
             AudioPlay(selects);
         }
         if (active)

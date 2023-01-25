@@ -108,7 +108,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 1
 --- !u!231 &892598537622618004
 SpringJoint2D:
   m_ObjectHideFlags: 0
@@ -157,7 +157,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f951a8792ad2134db793e17d36ea8d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxdis: 1.3
+  Li: 1
   Mynum: 0
   position_r: {fileID: 0}
   position_l: {fileID: 0}
@@ -184,5 +184,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 4f66260ec305ad64ca1dcd89b36ff9dd, type: 3}
   yell:
   - {fileID: 8300000, guid: f3dc11d25b92cc449a45674951a477c2, type: 3}
+  shot: []
   selects: {fileID: 8300000, guid: 8258249efe47fff4cb4cade65c57b051, type: 3}
   fly_Audio: {fileID: 8300000, guid: 5ca420d546580144aa50bcce2d0a18b1, type: 3}
+  pull_Audio: {fileID: 0}
+  dst_Audio: {fileID: 0}

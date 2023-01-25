@@ -2193,7 +2193,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 1
 --- !u!212 &887335611
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5874,6 +5874,14 @@ PrefabInstance:
       propertyPath: m_ConnectedRigidBody
       value: 
       objectReference: {fileID: 489874839}
+    - target: {fileID: 5553739666921923675, guid: c33b85a99567cb5459f054186440664b, type: 3}
+      propertyPath: m_AngularDrag
+      value: 3.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5553739666921923675, guid: c33b85a99567cb5459f054186440664b, type: 3}
+      propertyPath: m_Constraints
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5553739666921923677, guid: c33b85a99567cb5459f054186440664b, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -5933,6 +5941,10 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -1683545269064220132, guid: ca6749cb08a6a5141992f3180bf21797, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 4bc686f26a6e69744add4543515cc0a6, type: 2}
     - target: {fileID: 7329904560143070277, guid: ca6749cb08a6a5141992f3180bf21797, type: 3}
       propertyPath: m_RootOrder
       value: 3
