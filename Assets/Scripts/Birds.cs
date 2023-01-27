@@ -21,8 +21,8 @@ public class Birds : MonoBehaviour
     public GameObject PP2;  //pp的克隆
     protected float x;      //x的坐标
     protected float y;
-    private float size;
-    protected List<GameObject> PPs;  //用于存储，统一删除PP2
+    protected float size;
+    public List<GameObject> PPs;  //用于存储，统一删除PP2
 
     public bool active = false;      //小鸟是否是活动的
     public bool Live = true;         //判定小鸟是否一重活着(飞出去就算死了)
@@ -94,7 +94,7 @@ public class Birds : MonoBehaviour
     }
     private void Anime_Jump()
     {
-        if(Mynum >= GameManage.instance.Num && Live)
+        if(Mynum >= GameManage.instance.Num && GameManage.instance.bird[GameManage.instance.Num - 1].Live)
         {
             if (rg.velocity.y == 0)
             {
@@ -104,12 +104,12 @@ public class Birds : MonoBehaviour
                 }
                 else
                 {
-                    rg.velocity = new Vector2(rg.velocity.x, rg.velocity.y + 4.75F-rg.mass);
-                    if (rg.mass < 2)
+                    rg.velocity = new Vector2(rg.velocity.x, rg.velocity.y + 3.75F);
+                    if (rg.mass < 1.7)
                     {
                         rg.rotation = 0;
                         int a = Random.Range(-1, 2);
-                        rg.angularVelocity += 1305 * a;   //Angular Drag=3.3 Angular Rotate:Rotate = 10:3.026(精确两位)
+                        rg.angularVelocity += 1305 * a;   //Angular Drag=3.3   Angular Rotate:Rotate = 10:3.026(精确两位)
                     }
                 }
             }
@@ -152,7 +152,7 @@ public class Birds : MonoBehaviour
     }
     protected void Xian(Transform targets)//小鸟划线的脚本
     {
-        if (x ==0 || (targets.position-new Vector3(x,y,0)).magnitude>0.35)
+        if (x ==0 || (targets.position-new Vector3(x,y,0)).magnitude>0.4)
         {
             PP2 = Instantiate(PP, targets.position, Quaternion.identity) as GameObject;
             float v3 = (size % 3 + 2.45F) / 10 ;
@@ -166,6 +166,7 @@ public class Birds : MonoBehaviour
     protected void ShowPP()
     {
         PP2 = Instantiate(PP);
+        PP2.layer = 10;
         PP2.transform.localScale = new Vector3(0.8F, 0.8F, 0.8F);
         PP2.transform.position = transform.position;
         PPs.Add(PP2);
@@ -181,7 +182,7 @@ public class Birds : MonoBehaviour
     }
     private void Itzs()
     {
-        GameManage.instance.Itz();
+        GameManage.instance.Bezer();
     }
     private void Next() // 下一个小鸟的飞出
     {
@@ -236,7 +237,7 @@ public class Birds : MonoBehaviour
         put = false;
         circle.enabled = true;
         rg.isKinematic = false;
-        if (Mynum >= GameManage.instance.Num && rg.velocity.y == 0)
+        if (Mynum > GameManage.instance.Num && rg.velocity.y == 0)
         {
             rg.velocity += new Vector2(0, 4 / rg.mass);
             AudioPlay(selects);

@@ -6,7 +6,6 @@ public class WhiteBirds : Birds
 {
     public Sprite Used;
     private GameObject Son;
-    private bool Isrote;
 
     private void Start()
     {
@@ -23,10 +22,9 @@ public class WhiteBirds : Birds
         Son.transform.position = transform.position + new Vector3(0, -0.9F, 0);
         rg.velocity += new Vector2(0, 8);
         rg.freezeRotation = false;
-        rg.angularVelocity += 8848;
         Rigidbody2D srg = Son.GetComponent<Rigidbody2D>();
         srg.velocity += new Vector2(0, -4);
-        Isrote = true;
+        transform.DetachChildren();
     }
     private new void OnCollisionEnter2D(Collision2D collision)  //øπ–‘…Ë÷√
     {
@@ -47,5 +45,10 @@ public class WhiteBirds : Birds
                 Li *= 1.75F;
                 break;
         }
+    }
+    private void FixedUpdate()
+    {
+        if(!active && Live2)
+            transform.Rotate(Vector3.forward, -30);
     }
 }

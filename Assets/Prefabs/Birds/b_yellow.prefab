@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 7329904560143070283}
   - component: {fileID: 7329904560143070282}
   - component: {fileID: 7329904560143070281}
-  - component: {fileID: -1683545269064220132}
   - component: {fileID: 7329904560143070278}
   m_Layer: 0
   m_Name: b_yellow
@@ -127,9 +126,9 @@ SpringJoint2D:
   m_Anchor: {x: 0.020121098, y: -0.08048284}
   m_ConnectedAnchor: {x: 0.06880188, y: 0.70066077}
   m_AutoConfigureDistance: 0
-  m_Distance: 0.3
+  m_Distance: 0.1
   m_DampingRatio: 0
-  m_Frequency: 2.4
+  m_Frequency: 2.3
 --- !u!58 &7329904560143070281
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -146,26 +145,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: -0.043594867}
   serializedVersion: 2
   m_Radius: 0.2
---- !u!95 &-1683545269064220132
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7329904560143070287}
-  m_Enabled: 0
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &7329904560143070278
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -188,6 +167,7 @@ MonoBehaviour:
   boom: {fileID: 5174335192159222314, guid: 5d6cc5c134a51184db04d143cbef5627, type: 3}
   PP: {fileID: 6205346999462627497, guid: 5a4e97f2989d0f9408a2faf65beeacc1, type: 3}
   PP2: {fileID: 0}
+  PPs: []
   active: 0
   Live: 1
   sp: {fileID: 0}

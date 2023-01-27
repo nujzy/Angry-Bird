@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1700600851448563554}
   - component: {fileID: 375573425211011011}
   - component: {fileID: 3933808029155723903}
+  - component: {fileID: 4126402126167757649}
   m_Layer: 0
   m_Name: b_blue_group
   m_TagString: Untagged
@@ -123,6 +124,28 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0.004814118}
   serializedVersion: 2
   m_Radius: 0.12
+--- !u!114 &4126402126167757649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2308707238691678609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3217c69cbd98dd94082f8daea96b1b71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hurt: {fileID: -610681704, guid: 83fcd8f88b783414b82a8f648265aa56, type: 3}
+  Cl:
+  - {fileID: 8300000, guid: 0f4bc861beeb077479c8ea236838bbf9, type: 3}
+  - {fileID: 8300000, guid: b2b9a8d5a1a364743abded95ee180d45, type: 3}
+  - {fileID: 8300000, guid: 63c8072c00992f642acfad1a4dadcdc6, type: 3}
+  - {fileID: 8300000, guid: 973f0f49308a85d448204409112ebb1b, type: 3}
+  - {fileID: 8300000, guid: 23c6d6a8f095fc6418bceaef109a6027, type: 3}
+  dst:
+  - {fileID: 8300000, guid: ee84a730940604d4790fcbe14f8a5a80, type: 3}
+  size: 0
 --- !u!1 &4767627240860205960
 GameObject:
   m_ObjectHideFlags: 0
@@ -152,7 +175,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4767627240860205960}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.54, y: -1.96, z: 0}
+  m_LocalPosition: {x: -9.758, y: -1.948, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -251,9 +274,9 @@ SpringJoint2D:
   m_Anchor: {x: 0.04046917, y: 0.0062259436}
   m_ConnectedAnchor: {x: 0.06880188, y: 0.70066077}
   m_AutoConfigureDistance: 0
-  m_Distance: 0.3
+  m_Distance: 0.1
   m_DampingRatio: 0
-  m_Frequency: 2.4
+  m_Frequency: 2.3
 --- !u!58 &4767627240860205966
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -292,6 +315,7 @@ MonoBehaviour:
   boom: {fileID: 5174335192159222314, guid: 5d6cc5c134a51184db04d143cbef5627, type: 3}
   PP: {fileID: 6205346999462627497, guid: 5a4e97f2989d0f9408a2faf65beeacc1, type: 3}
   PP2: {fileID: 0}
+  PPs: []
   active: 0
   Live: 1
   sp: {fileID: 0}
@@ -330,6 +354,7 @@ GameObject:
   - component: {fileID: 6562687185509719326}
   - component: {fileID: 1040291618579978997}
   - component: {fileID: 6752422480117756522}
+  - component: {fileID: 7386780017446358551}
   m_Layer: 0
   m_Name: b_blue_group (1)
   m_TagString: Untagged
@@ -441,3 +466,25 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0.004814118}
   serializedVersion: 2
   m_Radius: 0.12
+--- !u!114 &7386780017446358551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9219402574626124886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3217c69cbd98dd94082f8daea96b1b71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hurt: {fileID: -610681704, guid: 83fcd8f88b783414b82a8f648265aa56, type: 3}
+  Cl:
+  - {fileID: 8300000, guid: 0f4bc861beeb077479c8ea236838bbf9, type: 3}
+  - {fileID: 8300000, guid: b2b9a8d5a1a364743abded95ee180d45, type: 3}
+  - {fileID: 8300000, guid: 63c8072c00992f642acfad1a4dadcdc6, type: 3}
+  - {fileID: 8300000, guid: 973f0f49308a85d448204409112ebb1b, type: 3}
+  - {fileID: 8300000, guid: 23c6d6a8f095fc6418bceaef109a6027, type: 3}
+  dst:
+  - {fileID: 8300000, guid: ee84a730940604d4790fcbe14f8a5a80, type: 3}
+  size: 0

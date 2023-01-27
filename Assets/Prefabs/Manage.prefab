@@ -30,7 +30,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5988048818790663265
 MonoBehaviour:
@@ -51,9 +51,40 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
   pigs:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  PP: {fileID: 6205346999462627497, guid: 5a4e97f2989d0f9408a2faf65beeacc1, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  Movebles: []
+  Num: 0
+  p_org: {x: 0, y: 0, z: 0}
+  win_Audio:
+  - {fileID: 8300000, guid: 256763a5763f65241a900790ef7a4550, type: 3}
+  - {fileID: 8300000, guid: 8e15fdfed1e546a4791ac820076cfb4c, type: 3}
+  lose_Audio:
+  - {fileID: 8300000, guid: 49f24a1af51d345448512e964b4dd1d9, type: 3}
+  - {fileID: 8300000, guid: f0b67ce73b5daa04ea8df67ae777d86d, type: 3}
+  next_Audio:
+  - {fileID: 8300000, guid: 36276150ee8dfe449b76df9d6c957eda, type: 3}
+  - {fileID: 8300000, guid: 146c9152499186c42802fd6c88b285cf, type: 3}
+  - {fileID: 8300000, guid: 0ce8121f7b532b6498cf3b0ac14529b1, type: 3}
+  start_Audio:
+  - {fileID: 8300000, guid: 23c2ff2939d795f47963a2fa62b7dbf3, type: 3}
+  - {fileID: 8300000, guid: 4f4b37a9ba9c7484ab874c2bd161e263, type: 3}
+  open_Audio:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}

@@ -126,9 +126,9 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0.06880188, y: 0.70066077}
   m_AutoConfigureDistance: 0
-  m_Distance: 0.3
+  m_Distance: 0.1
   m_DampingRatio: 0
-  m_Frequency: 2.4
+  m_Frequency: 2.3
 --- !u!58 &892598537622618005
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -167,6 +167,7 @@ MonoBehaviour:
   boom: {fileID: 5174335192159222314, guid: 5d6cc5c134a51184db04d143cbef5627, type: 3}
   PP: {fileID: 6205346999462627497, guid: 5a4e97f2989d0f9408a2faf65beeacc1, type: 3}
   PP2: {fileID: 0}
+  PPs: []
   active: 0
   Live: 1
   sp: {fileID: 0}
