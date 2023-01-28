@@ -4,24 +4,5 @@ using UnityEngine;
 
 public class RedBirds : Birds
 {
-    private new void OnCollisionEnter2D(Collision2D collision)  //¿¹ÐÔÉèÖÃ
-    {
-        base.OnCollisionEnter2D(collision);
-        var tag = collision.collider.tag;
-        switch (tag)
-        {
-            case "glass":   //²£Á§
-                Li *= 1.25F;
-                break;
-            case "wood":    //Ä¾Í·
-                Li *= 1.25F;
-                break;
-            case "iron":    //Ìú¿é
-                Li *= 1.25F;
-                break;
-            case "pig":
-                Li *= 1.75F;
-                break;
-        }
-    }
+
 }

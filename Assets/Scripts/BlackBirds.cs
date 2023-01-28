@@ -81,22 +81,6 @@ public class BlackBirds : Birds
             AudioPlay(coll);
             TimeOut();
         }
-        var tag = collision.collider.tag;
-        switch (tag)
-        {
-            case "glass":   //²£Á§
-                Li *= 1F;
-                break;
-            case "wood":    //Ä¾Í·
-                Li *= 1F;
-                break;
-            case "iron":    //Ìú¿é
-                Li *= 2F;
-                break;
-            case "pig":
-                Li *= 1.65F;
-                break;
-        }
     }
     private new void Update()
     {

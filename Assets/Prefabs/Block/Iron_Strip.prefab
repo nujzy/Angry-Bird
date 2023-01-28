@@ -14,8 +14,8 @@ GameObject:
   - component: {fileID: 341847127202759009}
   - component: {fileID: 341847127202759021}
   m_Layer: 0
-  m_Name: Wood_Strip
-  m_TagString: wood
+  m_Name: Iron_Strip
+  m_TagString: iron
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: -999493095
   m_SortingLayer: 1
   m_SortingOrder: 8
-  m_Sprite: {fileID: 422709551, guid: adcea6c4a300d034c846f10dfb482c28, type: 3}
+  m_Sprite: {fileID: -63780230, guid: adcea6c4a300d034c846f10dfb482c28, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -99,7 +99,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.78
+  m_Mass: 2.78
   m_LinearDrag: 0
   m_AngularDrag: 4
   m_GravityScale: 1
@@ -146,14 +146,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f44e203ac509e4643a56c184f00591db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxs: 21
-  mins: 5
+  maxs: 32.5
+  mins: 8
   Ispig: 0
   Hurt:
-  - {fileID: 422709551, guid: adcea6c4a300d034c846f10dfb482c28, type: 3}
-  - {fileID: -1563935471, guid: adcea6c4a300d034c846f10dfb482c28, type: 3}
-  - {fileID: 377466132, guid: adcea6c4a300d034c846f10dfb482c28, type: 3}
-  - {fileID: 1834692306, guid: adcea6c4a300d034c846f10dfb482c28, type: 3}
+  - {fileID: -63780230, guid: adcea6c4a300d034c846f10dfb482c28, type: 3}
+  - {fileID: -1006286668, guid: adcea6c4a300d034c846f10dfb482c28, type: 3}
+  - {fileID: 718801818, guid: adcea6c4a300d034c846f10dfb482c28, type: 3}
+  - {fileID: -1160402495, guid: adcea6c4a300d034c846f10dfb482c28, type: 3}
   Link: []
   Laugh: []
   boom: {fileID: 5174335192159222314, guid: 5d6cc5c134a51184db04d143cbef5627, type: 3}

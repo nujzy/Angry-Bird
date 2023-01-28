@@ -33,7 +33,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &6108554896099710253
 SpriteRenderer:
@@ -121,9 +121,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.0036367476}
+  m_Offset: {x: -0.012925029, y: -0.046770453}
   serializedVersion: 2
-  m_Radius: 0.47897735
+  m_Radius: 0.42081523
 --- !u!114 &6108554896099710258
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -136,10 +136,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f44e203ac509e4643a56c184f00591db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxs: 18
+  maxs: 15
   mins: 5
   Ispig: 1
-  hurt:
+  Hurt:
   - {fileID: -1126814096, guid: 83fcd8f88b783414b82a8f648265aa56, type: 3}
   - {fileID: 1173049194, guid: 83fcd8f88b783414b82a8f648265aa56, type: 3}
   - {fileID: 857790213, guid: 83fcd8f88b783414b82a8f648265aa56, type: 3}

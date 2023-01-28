@@ -33,7 +33,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2479463663214004420
 SpriteRenderer:
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: -999493095
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 776835138, guid: adcea6c4a300d034c846f10dfb482c28, type: 3}
+  m_Sprite: {fileID: 1127093330, guid: adcea6c4a300d034c846f10dfb482c28, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -99,7 +99,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 2
+  m_Mass: 1.5
   m_LinearDrag: 0
   m_AngularDrag: 4
   m_GravityScale: 1
@@ -121,18 +121,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0010726452, y: 0.0011736155}
+  m_Offset: {x: 0.0060064793, y: -0.003545761}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.82, y: 0.82}
+    oldSize: {x: 0.42, y: 0.41}
     newSize: {x: 0.82, y: 0.82}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.8092737, y: 0.81336236}
+  m_Size: {x: 0.36093664, y: 0.3839028}
   m_EdgeRadius: 0
 --- !u!114 &2479463663214004417
 MonoBehaviour:
@@ -146,16 +146,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f44e203ac509e4643a56c184f00591db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxs: 20
-  mins: 12
+  maxs: 23
+  mins: 8
   Ispig: 0
   Hurt:
-  - {fileID: 776835138, guid: adcea6c4a300d034c846f10dfb482c28, type: 3}
-  - {fileID: 529923089, guid: adcea6c4a300d034c846f10dfb482c28, type: 3}
-  - {fileID: -1558398709, guid: adcea6c4a300d034c846f10dfb482c28, type: 3}
-  - {fileID: -1536608110, guid: adcea6c4a300d034c846f10dfb482c28, type: 3}
+  - {fileID: 1127093330, guid: adcea6c4a300d034c846f10dfb482c28, type: 3}
+  - {fileID: -809617663, guid: adcea6c4a300d034c846f10dfb482c28, type: 3}
+  - {fileID: -1520648040, guid: adcea6c4a300d034c846f10dfb482c28, type: 3}
+  - {fileID: 1872965819, guid: adcea6c4a300d034c846f10dfb482c28, type: 3}
   Link: []
   Laugh: []
-  Mycount: 0
   boom: {fileID: 5174335192159222314, guid: 5d6cc5c134a51184db04d143cbef5627, type: 3}
   Score: {fileID: 0}

@@ -44,24 +44,4 @@ public class BlueBirds : Birds
         ShowPP();
         Invoke("Cllon", 0.15F);
     }
-    private new void OnCollisionEnter2D(Collision2D collision)  //¿¹ÐÔÉèÖÃ
-    {
-        base.OnCollisionEnter2D (collision);
-        var tag = collision.collider.tag;
-        switch (tag)
-        {
-            case "glass":   //²£Á§
-                Li *= 2F;
-                break;
-            case "wood":    //Ä¾Í·
-                Li *= 0.75F;
-                break;
-            case "iron":    //Ìú¿é
-                Li *= 0.75F;
-                break;
-            case "pig":
-                Li *= 1.65F;
-                break;
-        }
-    }
 }

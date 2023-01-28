@@ -4,7 +4,6 @@ using UnityEngine;
 public class Birds : MonoBehaviour
 {
     private float maxdis = 1.3F;
-    public float Li=1F;   //Åö×²±¶Êý
     private bool put = false;
     public int Mynum;
 
@@ -229,7 +228,7 @@ public class Birds : MonoBehaviour
         put = false;
         circle.enabled = true;
         rg.isKinematic = false;
-        if (Mynum > GameManage.instance.Num && rg.velocity.y == 0)
+        if (Mynum > GameManage.instance.Num-1 && rg.velocity.y == 0)
         {
             rg.velocity += new Vector2(0, 4 / rg.mass);
             AudioPlay(selects);

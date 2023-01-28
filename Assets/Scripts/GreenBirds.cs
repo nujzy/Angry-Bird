@@ -58,24 +58,4 @@ public class GreenBirds : Birds
             transform.Rotate(Vector3.forward, -10 * GetSign(rg.velocity.x)*a);
         }
     }
-    private new void OnCollisionEnter2D(Collision2D collision)
-    {
-        base.OnCollisionEnter2D (collision);
-        var tag = collision.collider.tag;
-        switch (tag)
-        {
-            case "glass":   //²£Á§
-                Li *= 2F;
-                break;
-            case "wood":    //Ä¾Í·
-                Li *= 2F;
-                break;
-            case "iron":    //Ìú¿é
-                Li *= 1.2F;
-                break;
-            case "pig":
-                Li *= 1.65F;
-                break;
-        }
-    }
 }

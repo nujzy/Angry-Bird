@@ -66,7 +66,7 @@ public class GameManage : MonoBehaviour
         Vector3 start = bird[Num].transform.position;
         Vector3 target = p_org;
         Vector3 mid = new Vector3((start.x + target.x) / 2, target.y + 1.5F, 0);
-        for (float i = 0; i < 1; i += Time.deltaTime)
+        for (float i = 0; i <= 1.01; i += Time.deltaTime)
         {
             Vector3 s1 = Vector3.Lerp(start, mid, i);
             Vector3 s2 = Vector3.Lerp(mid, target, i);
@@ -78,7 +78,7 @@ public class GameManage : MonoBehaviour
     private IEnumerator MovetoPoint(Vector3 s3,float i,float q1)
     {
         bird[Num].rg.bodyType = RigidbodyType2D.Static;
-        while (Vector3.Distance(bird[Num].transform.position, s3) > 0.01F)
+        while (Vector3.Distance(bird[Num].transform.position, s3) > 0.03F)
         {
             bird[Num].transform.position = Vector3.MoveTowards(bird[Num].transform.position,s3,Time.deltaTime*15);
             bird[Num].transform.localRotation = Quaternion.Euler(0, 0,-q1);
