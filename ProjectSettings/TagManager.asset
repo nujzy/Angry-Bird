@@ -6,6 +6,15 @@ TagManager:
   tags:
   - pig
   - wood
+  - glass
+  - iron
+  - red
+  - blue
+  - yellow
+  - black
+  - white
+  - green
+  - big
   layers:
   - Default
   - TransparentFX

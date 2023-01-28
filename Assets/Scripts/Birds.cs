@@ -94,7 +94,7 @@ public class Birds : MonoBehaviour
     }
     private void Anime_Jump()
     {
-        if(Mynum >= GameManage.instance.Num && GameManage.instance.bird[GameManage.instance.Num - 1].Live)
+        if(Mynum >= GameManage.instance.Num && GameManage.instance.bird[Mynum-1].Live)
         {
             if (rg.velocity.y == 0)
             {
@@ -144,7 +144,7 @@ public class Birds : MonoBehaviour
     {
         AudioPlay(fly_Audio);
         AudioPlay(shot);
-        Next();
+        GameManage.instance.Bezer();
         rg.freezeRotation = false;
         Live = false;
         sp.enabled = false;
@@ -179,14 +179,6 @@ public class Birds : MonoBehaviour
         {
             Destroy(PPs[i]);
         }
-    }
-    private void Itzs()
-    {
-        GameManage.instance.Bezer();
-    }
-    private void Next() // 下一个小鸟的飞出
-    {
-        Invoke("Itzs", 1F);
     }
     public void Hide() //小鸟单独的隐藏脚本
     {

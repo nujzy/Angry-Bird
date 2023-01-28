@@ -36,10 +36,7 @@ public class GameManage : MonoBehaviour
             Movebles.Add(bird[i].gameObject);
             bird[i].Mynum = i;
             bird[i].Change();
-            if (i > 0)
-            {
-                bird[i].Jump();
-            }
+            bird[i].Jump();
         }
     }
     protected void AudioPlay(List<AudioClip> clips)

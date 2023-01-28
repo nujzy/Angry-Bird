@@ -149,6 +149,13 @@ MonoBehaviour:
   maxs: 18
   mins: 12
   Ispig: 0
-  hurt: {fileID: -1018881876, guid: adcea6c4a300d034c846f10dfb482c28, type: 3}
+  Hurt:
+  - {fileID: -121627941, guid: adcea6c4a300d034c846f10dfb482c28, type: 3}
+  - {fileID: -1018881876, guid: adcea6c4a300d034c846f10dfb482c28, type: 3}
+  - {fileID: -1702412901, guid: adcea6c4a300d034c846f10dfb482c28, type: 3}
+  - {fileID: -27026253, guid: adcea6c4a300d034c846f10dfb482c28, type: 3}
+  Link: []
+  Laugh: []
+  Mycount: 0
   boom: {fileID: 5174335192159222314, guid: 5d6cc5c134a51184db04d143cbef5627, type: 3}
   Score: {fileID: 0}
