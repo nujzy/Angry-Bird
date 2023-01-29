@@ -8,6 +8,7 @@ public class Collison_Moveble : MonoBehaviour
     public float mins = 5;
     private float life;
     public bool Ispig = false; //判定对象是猪还是物体
+    public bool Isnormal = false;
 
     private SpriteRenderer sr;
     public List<Sprite> Hurt = new List<Sprite>();
@@ -127,7 +128,7 @@ public class Collison_Moveble : MonoBehaviour
         Destroy(gameObject);
         Instantiate(boom, transform.position, Quaternion.identity);         
     }
-    private void OnCollisionEnter2D(Collision2D collision)//碰撞检测 两个rg 都会反馈
+    protected void OnCollisionEnter2D(Collision2D collision)//碰撞检测 两个rg 都会反馈
     {
         Ht(collision.relativeVelocity.magnitude * Gettag(collision));
     }

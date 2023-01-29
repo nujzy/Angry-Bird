@@ -46,7 +46,7 @@ public class GameManage : MonoBehaviour
     }
     public void Win()   //Ö»ÏìÓ¦Ê¤ÀûºÍÊ§°Ü
     {
-        if (pigs.Count > 0 && bird.Count == Num - 1)   //Ê§°Ü
+        if (pigs.Count > 0 && bird.Count == Num-1)   //Ê§°Ü
         {
             AudioPlay(lose_Audio);
         }
@@ -58,8 +58,14 @@ public class GameManage : MonoBehaviour
     }
     public void Bezer()
     {
-        if(Num<bird.Count)
+        if (Num < bird.Count)
+        {
             StartCoroutine(Move());
+        }
+        else
+        {
+            Itz();
+        }
     }
     private IEnumerator Move()
     {
