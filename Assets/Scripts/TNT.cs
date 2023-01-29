@@ -47,7 +47,7 @@ public class TNT : Collison_Moveble
                         Moves[i].GetComponent<Collison_Moveble>().Ht(12 * (3F - Dis));
                     }
                     float speed = 10.5F / Mathf.Pow(Dis, 1.35F) + 0.75F / Mathf.Pow(srg.mass, 1.25F);
-                    if (Moves[i].tag == "pig")
+                    if (Moves[i].tag is "pig")
                     {
                         speed += 1.5F;
                     }

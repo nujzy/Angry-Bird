@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6392086405518037107}
   - component: {fileID: 3488340282227210559}
   - component: {fileID: 4953200842612216879}
-  - component: {fileID: 3692720392776671868}
+  - component: {fileID: 1729745543263540737}
   m_Layer: 0
   m_Name: Normal_Wtm
   m_TagString: Untagged
@@ -130,8 +130,8 @@ MonoBehaviour:
   Laugh: []
   boom: {fileID: 5174335192159222314, guid: 5d6cc5c134a51184db04d143cbef5627, type: 3}
   Score: {fileID: 0}
---- !u!68 &3692720392776671868
-EdgeCollider2D:
+--- !u!58 &1729745543263540737
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -143,30 +143,6 @@ EdgeCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: -0.007480651, y: 0.25721258}
-  - {x: 0.032779694, y: 0.25478506}
-  - {x: 0.032099724, y: 0.16084737}
-  - {x: 0.081521034, y: 0.15146649}
-  - {x: 0.12500381, y: 0.12204957}
-  - {x: 0.1673708, y: 0.052981913}
-  - {x: 0.17417526, y: -0.0027210712}
-  - {x: 0.16985893, y: -0.026448905}
-  - {x: 0.14808178, y: -0.105549216}
-  - {x: 0.106173515, y: -0.17836791}
-  - {x: 0.06481075, y: -0.22251666}
-  - {x: 0.018661499, y: -0.26611155}
-  - {x: -0.04286194, y: -0.2643668}
-  - {x: -0.1453495, y: -0.14417315}
-  - {x: -0.19166374, y: -0.04317206}
-  - {x: -0.19281769, y: 0.012268782}
-  - {x: -0.16338348, y: 0.072155476}
-  - {x: -0.10034561, y: 0.13916498}
-  - {x: -0.0048770905, y: 0.16481286}
-  - {x: -0.008219212, y: 0.2543115}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
+  m_Offset: {x: 0, y: 0.0039309263}
+  serializedVersion: 2
+  m_Radius: 0.29013956

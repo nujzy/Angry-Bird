@@ -149,11 +149,14 @@ MonoBehaviour:
   maxs: 10
   mins: 5
   Ispig: 0
-  Isnormal: 0
+  Isnormal: 1
   Hurt:
   - {fileID: 260161220, guid: adcea6c4a300d034c846f10dfb482c28, type: 3}
   Link: []
   Laugh: []
+  cll: []
+  dst: []
   boom: {fileID: 5174335192159222314, guid: 95d01b297201da04087aad70eed254a3, type: 3}
   Score: {fileID: 0}
   Fire: {fileID: 4460196074144005023, guid: 21c93c56222409e4d8fd22ca1b3fa0e3, type: 3}
+  boom_Audio: {fileID: 8300000, guid: 9ddd852d308d4ae41b3df5a84a8b3cca, type: 3}

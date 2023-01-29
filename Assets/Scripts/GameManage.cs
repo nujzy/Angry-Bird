@@ -20,6 +20,7 @@ public class GameManage : MonoBehaviour
     public List<AudioClip> open_Audio;
 
     private bool wins = false;
+    private bool Isover;
     private void Awake()//指定自己,供其它类引用
     {
         instance = this;
@@ -37,6 +38,7 @@ public class GameManage : MonoBehaviour
             bird[i].Mynum = i;
             bird[i].Change();
             bird[i].Jump();
+            pigs[i].Links();
         }
     }
     protected void AudioPlay(List<AudioClip> clips)
@@ -44,9 +46,17 @@ public class GameManage : MonoBehaviour
         int a = Random.Range(0, clips.Count);
         AudioSource.PlayClipAtPoint(clips[a], new Vector3(0, 0, 0));
     }
+    public void PigLaugh()
+    {
+        for(int i = 0; i < pigs.Count; i++)
+        {
+            if (pigs[i] != null)
+                pigs[i].Laughs = true;
+        }
+    }
     public void Win()   //只响应胜利和失败
     {
-        if (pigs.Count > 0 && bird.Count == Num-1)   //失败
+        if (pigs.Count > 0 && Isover)   //失败
         {
             AudioPlay(lose_Audio);
         }
@@ -64,7 +74,7 @@ public class GameManage : MonoBehaviour
         }
         else
         {
-            Itz();
+            Isover = true;
         }
     }
     private IEnumerator Move()

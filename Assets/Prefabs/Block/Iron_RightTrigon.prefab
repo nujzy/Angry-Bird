@@ -12,10 +12,10 @@ GameObject:
   - component: {fileID: 234541401979448038}
   - component: {fileID: -2068523858259443760}
   - component: {fileID: 4661793022220657753}
-  - component: {fileID: 4843723518850920422}
+  - component: {fileID: -6394751419203870233}
   m_Layer: 0
-  m_Name: Iron_Trigon 1
-  m_TagString: wood
+  m_Name: Iron_RightTrigon
+  m_TagString: iron
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: -999493095
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1151654024, guid: adcea6c4a300d034c846f10dfb482c28, type: 3}
+  m_Sprite: {fileID: -1858510948, guid: adcea6c4a300d034c846f10dfb482c28, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -99,7 +99,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 3.5
+  m_Mass: 4.5
   m_LinearDrag: 0
   m_AngularDrag: 4
   m_GravityScale: 1
@@ -120,19 +120,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f44e203ac509e4643a56c184f00591db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxs: 36
-  mins: 12
+  maxs: 41
+  mins: 10
   Ispig: 0
+  Isnormal: 0
   Hurt:
-  - {fileID: 1151654024, guid: adcea6c4a300d034c846f10dfb482c28, type: 3}
-  - {fileID: -1456116638, guid: adcea6c4a300d034c846f10dfb482c28, type: 3}
-  - {fileID: -544961054, guid: adcea6c4a300d034c846f10dfb482c28, type: 3}
-  - {fileID: -637420884, guid: adcea6c4a300d034c846f10dfb482c28, type: 3}
+  - {fileID: -1858510948, guid: adcea6c4a300d034c846f10dfb482c28, type: 3}
+  - {fileID: -1955691859, guid: adcea6c4a300d034c846f10dfb482c28, type: 3}
+  - {fileID: 1020065837, guid: adcea6c4a300d034c846f10dfb482c28, type: 3}
+  - {fileID: 824799864, guid: adcea6c4a300d034c846f10dfb482c28, type: 3}
   Link: []
   Laugh: []
+  cll:
+  - {fileID: 8300000, guid: 003d2e5b2c8b2aa4cb966d1f762f60e9, type: 3}
+  - {fileID: 8300000, guid: cbd3ea4fff8c40548ba773ad4e9f23d3, type: 3}
+  - {fileID: 8300000, guid: ce166d1c7f96ee240ba9dbbe4833cb17, type: 3}
+  - {fileID: 8300000, guid: 184a78c0f160bb143bed0a745b5f1d5e, type: 3}
+  - {fileID: 8300000, guid: 65efe93ba7c2ae740838687d38134c19, type: 3}
+  dst:
+  - {fileID: 8300000, guid: c860dd8e819fb1f43bc80aa734096f44, type: 3}
+  - {fileID: 8300000, guid: fea03a6202727de479f82d1d831ca711, type: 3}
+  - {fileID: 8300000, guid: 41e584b10d6fb734b9d1504a7b8bcdea, type: 3}
+  - {fileID: 8300000, guid: 8ef8aa9e8cf8a954ca10d634c9f749f0, type: 3}
+  - {fileID: 8300000, guid: 838f83d7e9766734e8343a4396cc7a51, type: 3}
+  - {fileID: 8300000, guid: 00325f6a25f851243ba38f613f1051a6, type: 3}
   boom: {fileID: 5174335192159222314, guid: 5d6cc5c134a51184db04d143cbef5627, type: 3}
   Score: {fileID: 0}
---- !u!60 &4843723518850920422
+--- !u!60 &-6394751419203870233
 PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -149,7 +163,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.82, y: 0.82}
+    oldSize: {x: 0.8, y: 0.8}
     newSize: {x: 0.4, y: 0.41}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -157,16 +171,10 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.010701463, y: 0.392534}
-      - {x: -0.21760178, y: -0.0030995514}
-      - {x: -0.38816753, y: -0.3407805}
-      - {x: -0.39035073, y: -0.39690045}
-      - {x: 0.40563336, y: -0.39253393}
-      - {x: 0.3881673, y: -0.31951353}
-      - {x: 0.009785231, y: 0.38816747}
-    - - {x: 0, y: 0.04}
-      - {x: 0.0483823, y: -0.02781674}
-      - {x: 0.064015664, y: -0.056549713}
-      - {x: 0.11, y: -0.17}
-      - {x: -0.099999994, y: -0.17}
+    - - {x: -0.3765527, y: 0.3722896}
+      - {x: -0.3872105, y: -0.39147377}
+      - {x: 0.37228978, y: -0.38507903}
+      - {x: 0.39360535, y: -0.38328904}
+      - {x: -0.13483381, y: 0.14330924}
+      - {x: -0.20718512, y: 0.21029079}
   m_UseDelaunayMesh: 0

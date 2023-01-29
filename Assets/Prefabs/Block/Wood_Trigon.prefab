@@ -123,6 +123,7 @@ MonoBehaviour:
   maxs: 28
   mins: 9
   Ispig: 0
+  Isnormal: 0
   Hurt:
   - {fileID: 913630343, guid: adcea6c4a300d034c846f10dfb482c28, type: 3}
   - {fileID: -366265337, guid: adcea6c4a300d034c846f10dfb482c28, type: 3}
@@ -130,6 +131,20 @@ MonoBehaviour:
   - {fileID: 363872430, guid: adcea6c4a300d034c846f10dfb482c28, type: 3}
   Link: []
   Laugh: []
+  cll:
+  - {fileID: 8300000, guid: ade21111e6e2bb54e86b3731e9f8bcf1, type: 3}
+  - {fileID: 8300000, guid: 3c843ca50cb16c34384ae77b52b19cd8, type: 3}
+  - {fileID: 8300000, guid: d704130a18606bc458460dbaa53999e7, type: 3}
+  - {fileID: 8300000, guid: 2276079b592e2e841ade9df49ea4274a, type: 3}
+  - {fileID: 8300000, guid: 04dddf886cd71f7429be15fc57e59085, type: 3}
+  - {fileID: 8300000, guid: 53836d4ef47ef7742bb06dc5cd630846, type: 3}
+  dst:
+  - {fileID: 8300000, guid: 37a0843d7d583e648b655a399100fd09, type: 3}
+  - {fileID: 8300000, guid: 5b56f6302fa2f6141bbaa70c2a223ead, type: 3}
+  - {fileID: 8300000, guid: f7ae8adb9b632d4429dc93e0265768cf, type: 3}
+  - {fileID: 8300000, guid: 1ba418879e2e357488d6690196cf3875, type: 3}
+  - {fileID: 8300000, guid: b907b236b8cff3744bb86fc7abca5353, type: 3}
+  - {fileID: 8300000, guid: 0d8dcc318ed3fd648942085da92c0522, type: 3}
   boom: {fileID: 5174335192159222314, guid: 5d6cc5c134a51184db04d143cbef5627, type: 3}
   Score: {fileID: 0}
 --- !u!60 &4843723518850920422

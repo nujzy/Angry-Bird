@@ -188,16 +188,18 @@ public class Birds : MonoBehaviour
         }
         else
         {
-            gameObject.SetActive(false);
+            GameManage.instance.Win();
             Instantiate(boom, transform.position, Quaternion.identity);
             AudioPlay(dst_Audio);
-            GameManage.instance.Win();
+            gameObject.SetActive(false);
         }
     }
     protected void OnCollisionEnter2D(Collision2D collision)   //小鸟碰到东西后，开始消失判定
     {
         if (!Live && Live2)  //防止使用前小鸟的碰撞
         {
+            if (Live2)
+                GameManage.instance.PigLaugh();
             Live2 = false;
             AudioPlay(coll);
             sr.sprite = hurt;
